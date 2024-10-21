@@ -5,7 +5,7 @@ const SkillsSection = ({className}) => {
   return (
     <div className={`grid grid-cols-2 gap-[440px] mt-16 ${className}`}>
       <div className="flex flex-col gap-10">
-        <div className="font-jetbr text-6xl pl-20">Skills</div>
+        <div className="font-jetbr text-4xl pl-20">Skills</div>
         <AISkills />
         <WebSkillsTwo />
       </div>

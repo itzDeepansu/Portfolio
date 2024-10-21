@@ -48,33 +48,38 @@ export function WebSkillsOne() {
       <div className="flex size-full flex-col items-center justify-between gap-2">
         <div
           ref={div2Ref}
-          className="flex items-center justify-center w-16 h-16 shadow-md z-10"
+          className="flex items-center justify-center h-16 shadow-md z-10 gap-2"
         >
-          <ReactIcon />
+          <ReactIcon className="bg-background" />
+          <div className="bg-background">React</div>
         </div>
         <div
           ref={div3Ref}
-          className="flex items-center justify-center w-20 h-20 shadow-md z-10"
+          className="flex items-center justify-center h-20 shadow-md z-10 gap-2"
         >
-          <ExpressIcon />
+          <ExpressIcon className="bg-background" />
+          <div className="bg-background">Express</div>
         </div>
         <div
           ref={div4Ref}
-          className="flex items-center justify-center w-20 h-20 shadow-md z-10"
+          className="flex items-center justify-center h-20 shadow-md z-10 gap-2"
         >
-          <MongodbIcon />
+          <MongodbIcon className="bg-background" />
+          <div className="bg-background">MongoDB</div>
         </div>
         <div
           ref={div5Ref}
-          className="flex items-center justify-center w-20 h-20 shadow-md z-10"
+          className="flex items-center justify-center h-20 shadow-md z-10 gap-2"
         >
-          <PostgresqlIcon />
+          <PostgresqlIcon className="bg-background" />
+          <div className="bg-background">Postgresql</div>
         </div>
         <div
           ref={div6Ref}
-          className="flex items-center justify-center w-20 h-20 shadow-md z-10"
+          className="flex items-center justify-center h-20 shadow-md z-10 gap-2"
         >
-          <SupabaseIcon />
+          <SupabaseIcon className="bg-background" />
+          <div className="bg-background">Supabase</div>
         </div>
       </div>
       <AnimatedBeam
@@ -82,14 +87,14 @@ export function WebSkillsOne() {
         containerRef={containerRef}
         fromRef={div1Ref}
         toRef={div2Ref}
-        curvature={160}
+        curvature={220}
       />
       <AnimatedBeam
         duration={7}
         containerRef={containerRef}
         fromRef={div1Ref}
         toRef={div3Ref}
-        curvature={100}
+        curvature={120}
       />
       <AnimatedBeam
         duration={7}
@@ -103,14 +108,14 @@ export function WebSkillsOne() {
         containerRef={containerRef}
         fromRef={div1Ref}
         toRef={div5Ref}
-        curvature={-100}
+        curvature={-120}
       />
       <AnimatedBeam
         duration={7}
         containerRef={containerRef}
         fromRef={div1Ref}
         toRef={div6Ref}
-        curvature={-160}
+        curvature={-220}
       />
     </div>
   );
@@ -132,33 +137,38 @@ export function WebSkillsTwo() {
       <div className="flex size-full flex-col items-center justify-between gap-2 mr-12">
         <div
           ref={div2Ref}
-          className="flex items-center justify-center w-16 h-16 shadow-md z-10"
+          className="flex items-center justify-center h-16 shadow-md z-10 gap-1"
         >
-          <NextjsIcon />
+          <div className="bg-background">Next.js</div>
+          <NextjsIcon className="bg-background" />
         </div>
         <div
           ref={div3Ref}
-          className="flex items-center justify-center w-20 h-20 shadow-md z-10"
+          className="flex items-center justify-center h-20 shadow-md z-10 gap-1"
         >
-          <SocketioIcon />
+          <div className="bg-background">Socket.IO</div>
+          <SocketioIcon className="bg-background" />
         </div>
         <div
           ref={div4Ref}
-          className="flex items-center justify-center w-20 h-20 shadow-md z-10"
+          className="flex items-center justify-center h-20 shadow-md z-10 gap-1"
         >
-          <RedisIcon />
+          <div className="bg-background">Redis</div>
+          <RedisIcon className="bg-background" />
         </div>
         <div
           ref={div5Ref}
-          className="flex items-center justify-center w-20 h-20 shadow-md z-10"
+          className="flex items-center justify-center h-20 shadow-md z-10 gap-1"
         >
-          <DockerIcon />
+          <div className="bg-background">Docker</div>
+          <DockerIcon className="bg-background" />
         </div>
         <div
           ref={div6Ref}
-          className="flex items-center justify-center w-20 h-20 shadow-md z-10"
+          className="flex items-center justify-center h-20 shadow-md z-10 gap-1"
         >
-          <KubernetesIcon />
+          <div className="bg-background">Kubernetes</div>
+          <KubernetesIcon className="bg-background" />
         </div>
       </div>
       <div
@@ -174,6 +184,7 @@ export function WebSkillsTwo() {
         fromRef={div1Ref}
         toRef={div2Ref}
         curvature={160}
+        reverse
       />
       <AnimatedBeam
         duration={7}
@@ -181,6 +192,7 @@ export function WebSkillsTwo() {
         fromRef={div1Ref}
         toRef={div3Ref}
         curvature={100}
+        reverse
       />
       <AnimatedBeam
         duration={7}
@@ -188,6 +200,7 @@ export function WebSkillsTwo() {
         fromRef={div1Ref}
         toRef={div4Ref}
         curvature={1}
+        reverse
       />
       <AnimatedBeam
         duration={7}
@@ -195,6 +208,7 @@ export function WebSkillsTwo() {
         fromRef={div1Ref}
         toRef={div5Ref}
         curvature={-100}
+        reverse
       />
       <AnimatedBeam
         duration={7}
@@ -202,6 +216,7 @@ export function WebSkillsTwo() {
         fromRef={div1Ref}
         toRef={div6Ref}
         curvature={-160}
+        reverse
       />
     </div>
   );
@@ -222,34 +237,38 @@ export function AISkills() {
       <div className="flex size-full flex-col items-center justify-between gap-2 mr-12">
         <div
           ref={div2Ref}
-          className="flex items-center justify-center w-16 h-16 shadow-md z-10"
+          className="flex items-center justify-center h-12 shadow-md z-10 gap-1"
         >
-          <PythonIcon />
+          <div className="bg-background">Python</div>
+          <PythonIcon className="bg-background" />
         </div>
         <div
           ref={div3Ref}
-          className="flex items-center justify-center w-20 h-20 shadow-md z-10"
+          className="flex items-center justify-center h-20 shadow-md z-10 gap-1"
         >
-          <PandasIcon />
+          <div className="bg-background">Pandas</div>
+          <PandasIcon className="bg-background" />
         </div>
         <div
           ref={div4Ref}
-          className="flex items-center justify-center w-20 h-20 shadow-md z-10"
+          className="flex items-center justify-center h-20 shadow-md z-10 gap-1"
         >
-          <TensorflowIcon />
+          <div className="bg-background">TensorFlow</div>
+          <TensorflowIcon className="bg-background" />
         </div>
         <div
           ref={div5Ref}
-          className="flex items-center justify-center w-20 h-20 shadow-md z-10"
+          className="flex items-center justify-center  h-20 shadow-md z-10 gap-1"
         >
-          <KerasIcon />
+          <div className="bg-background">Keras</div>
+          <KerasIcon className="bg-background" />
         </div>
       </div>
       <div
         ref={div1Ref}
         className="flex items-center justify-center w-20 h-20 rounded-full shadow-md z-10 translate-x-5"
       >
-        <AIIcon />
+        <AIIcon className="bg-background" />
       </div>
 
       <AnimatedBeam
@@ -258,6 +277,7 @@ export function AISkills() {
         fromRef={div1Ref}
         toRef={div2Ref}
         curvature={120}
+        reverse
       />
       <AnimatedBeam
         duration={7}
@@ -265,6 +285,7 @@ export function AISkills() {
         fromRef={div1Ref}
         toRef={div3Ref}
         curvature={50}
+        reverse
       />
       <AnimatedBeam
         duration={7}
@@ -272,6 +293,7 @@ export function AISkills() {
         fromRef={div1Ref}
         toRef={div4Ref}
         curvature={-50}
+        reverse
       />
       <AnimatedBeam
         duration={7}
@@ -279,6 +301,7 @@ export function AISkills() {
         fromRef={div1Ref}
         toRef={div5Ref}
         curvature={-120}
+        reverse
       />
     </div>
   );
@@ -298,20 +321,22 @@ export function BlockChainSkills() {
         ref={div1Ref}
         className="flex items-center justify-center w-20 h-20 rounded-full shadow-md z-10 -translate-x-16"
       >
-        <BlockchainIcon />
+        <BlockchainIcon className="bg-background" />
       </div>
       <div className="flex size-full flex-col items-center justify-between gap-28">
         <div
           ref={div2Ref}
-          className="flex items-center justify-center w-16 h-16 shadow-md z-10 "
+          className="flex items-center justify-center gap-2 h-16 shadow-md z-10 "
         >
-          <ConfluxIcon />
+          <ConfluxIcon className="bg-background" />
+          <div className="bg-background">Conflux</div>
         </div>
         <div
           ref={div3Ref}
-          className="flex items-center justify-center w-20 h-20 z-10"
+          className="flex items-center justify-center gap-2 h-20 z-10"
         >
-          <SolanaIcon />
+          <SolanaIcon className="bg-background" />
+          <div className="bg-background">Solana</div>
         </div>
       </div>
       <AnimatedBeam

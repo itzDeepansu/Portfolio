@@ -3,7 +3,7 @@ import React from "react";
 const Navbar = ({ classes }) => {
   return (
     <div
-      className={`h-20 ${classes} font-jetbr flex justify-between pt-3 text-xs bg-black z-20`}
+      className={`h-20 ${classes} font-jetbr flex justify-between pt-3 text-xs bg-background z-20`}
     >
       <div className="font-bebas text-xl">Deepansu</div>
       <div>

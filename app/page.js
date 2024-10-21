@@ -6,21 +6,35 @@ import TypingText from "@/components/animata/text/typing-text.jsx";
 import SkillsSection from "./components/SkillsSection";
 import { useTheme } from "next-themes";
 import ProjectSection from "./components/ProjectSection";
+import Experiences from "./components/Experiences";
 
 export default function Home() {
-  const [currentIndex, setCurrentIndex] = useState(1);
+
   const { setTheme } = useTheme();
-  const [scrollTopper, setScrollTopper] = useState(0);
   setTheme("dark");
+
+  const [currentIndex, setCurrentIndex] = useState(1);
+  const [scrollTopper, setScrollTopper] = useState(0);
 
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
+
+  const [imageSources, setImageSources] = useState([]);
   useEffect(() => {
-    const images = Array.from(document.querySelectorAll("img"));
-    images.forEach((img) => {
-      img.src = `/images/male${String(currentIndex + 1).padStart(4, "0")}.png`; // Replace with your image path
-    });
+    const sources = [];
+    for (let i = 1; i <= 300; i++) {
+      const imageNumber = String(i).padStart(4, "0");
+      sources.push(`/images/male${imageNumber}.png`);
+    }
+    setImageSources(sources);
+  }, []);
+
+  useEffect(() => {
+    // const images = Array.from(document.querySelectorAll("img"));
+    // images.forEach((img) => {
+    //   img.src = `/images/male${String(currentIndex + 1).padStart(4, "0")}.png`; // Replace with your image path
+    // });
   }, [currentIndex]);
 
   // let scrollTopper = 0;
@@ -49,7 +63,7 @@ export default function Home() {
   return (
     <div className="image-container h-[5000px] relative mx-10 box-border font-jetbr">
       <Navbar classes="sticky top-0" />
-      <section className="h-[80dvh] grid grid-cols-2 gap-96">
+      <section className={`h-[80dvh] grid grid-cols-2 gap-96 ${scrollTopper >=200 ? "animate-fadeOut opacity-0" : "animate-fadeIn"}`}>
         <div className="h-[80dvh] text-7xl overflow-hidden pt-36 pl-10">
           <div className="font-dancing text-9xl">Creative</div>
           <TypingText
@@ -105,15 +119,20 @@ export default function Home() {
 
       <ProjectSection
         className={`${scrollTopper >= 1370 ? "animate-fadeIn" : "hidden"} ${
-          scrollTopper >= 1770 ? "animate-fadeOut opacity-0" : ""
+          scrollTopper >= 2170 ? "animate-fadeOut opacity-0" : ""
+        }`}
+      />
+      <Experiences
+        className={`${scrollTopper >= 2170 ? "animate-fadeIn" : "hidden"} ${
+          scrollTopper >= 2970 ? "animate-fadeOut opacity-0" : ""
         }`}
       />
 
       <img
         key={currentIndex}
         alt={`Image ${currentIndex}`}
-        src={`/images/${currentIndex}.png`}
-        className="transition duration-500 ease-in-out fixed bottom-0 h-[80dvh] z-10"
+        src={imageSources[currentIndex]}
+        className="transition duration-500 ease-in-out fixed bottom-0 h-[80dvh] z-30"
         style={{
           left: "50%",
           transform: "translate(-50%, 0%)",

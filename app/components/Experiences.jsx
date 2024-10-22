@@ -23,7 +23,7 @@ const Experiences = ({ className }) => {
         <img src="/Experiences/SIH.jpg" alt="" className="rounded-sm" />
       </div>
       <div className="font-jetbr text-4xl pl-20 h-full justify-start items-start flex flex-col gap-4">
-        Experiences
+        Experience
         <div className="text-xs text-mutedForeground">
           I have experience of working alone and in teams.
         </div>
@@ -32,7 +32,7 @@ const Experiences = ({ className }) => {
           professional organization ( during my internship ) but I have also
           experienced tensed environments of Hackathons.
         </div>
-        <div className="flex flex-col gap-4 justify-start items-start text-xl mt-72">
+        <div className="flex flex-col gap-4 justify-start items-start text-xl mt-44">
           <div className="gap-2 flex flex-col">
             <div>Hackathons:</div>
             <ul className="text-xs text-mutedForeground pl-20 list-none">

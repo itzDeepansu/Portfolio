@@ -8,51 +8,17 @@ import { useTheme } from "next-themes";
 import ProjectSection from "./components/ProjectSection";
 import Experiences from "./components/Experiences";
 import { Vortex } from "@/components/ui/vortex";
+import ScrollImage from "./components/ScrollImage";
 
 export default function Home() {
   const { setTheme } = useTheme();
-  setTheme("dark");
-
-  const [currentIndex, setCurrentIndex] = useState(1);
   const [scrollTopper, setScrollTopper] = useState(0);
-
+  setTheme("dark");
   useEffect(() => {
     window.scrollTo(0, 0);
-  }, []);
-
-  const [imageSources, setImageSources] = useState([]);
-  useEffect(() => {
-    const sources = [];
-    for (let i = 1; i <= 300; i++) {
-      const imageNumber = String(i).padStart(4, "0");
-      sources.push(`/images/male${imageNumber}.png`);
-    }
-    setImageSources(sources);
-  }, []);
-
-  useEffect(() => {
-    // const images = Array.from(document.querySelectorAll("img"));
-    // images.forEach((img) => {
-    //   img.src = `/images/male${String(currentIndex + 1).padStart(4, "0")}.png`; // Replace with your image path
-    // });
-  }, [currentIndex]);
-
-  // let scrollTopper = 0;
-
-  useEffect(() => {
     const handleScroll = () => {
-      const scrollTop = window.scrollY;
-      const windowHeight = window.innerHeight;
-      const documentHeight = document.documentElement.scrollHeight;
-      const scrollTopPercentage = Math.floor(
-        (scrollTop * 100 * 2.999) / (documentHeight - windowHeight)
-      );
-
-      setCurrentIndex(scrollTopPercentage);
-      setScrollTopper(scrollTop);
-      console.log(scrollTop);
+      setScrollTopper(window.scrollY);
     };
-
     window.addEventListener("scroll", handleScroll);
 
     return () => {
@@ -62,7 +28,7 @@ export default function Home() {
 
   return (
     <div className="image-container h-[5000px] relative mx-10 box-border font-jetbr">
-      <Navbar classes="sticky top-0" />
+      <Navbar classes="sticky top-0 animate-fadeDown" />
 
       <section
         className={` ${
@@ -70,7 +36,7 @@ export default function Home() {
         }`}
       >
         <Vortex
-          backgroundColor="black"
+          backgroundColor={"black"}
           baseHue={100}
           particleCount={500}
           className="h-[80dvh] grid grid-cols-2 gap-96"
@@ -141,18 +107,8 @@ export default function Home() {
           scrollTopper >= 2970 ? "animate-fadeOut opacity-0" : ""
         }`}
       />
-
-      <img
-        key={currentIndex}
-        alt={`Image ${currentIndex}`}
-        src={imageSources[currentIndex]}
-        className="transition duration-500 ease-in-out fixed bottom-0 h-[80dvh] z-30"
-        style={{
-          left: "50%",
-          transform: "translate(-50%, 0%)",
-        }}
-      />
-      <Footer classes="w-full fixed bg-red-400" />
+      <ScrollImage />
+      <Footer className="animate-fadeUp" />
     </div>
   );
 }

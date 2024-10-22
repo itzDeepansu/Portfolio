@@ -1,6 +1,6 @@
 import React from "react";
 
-const Footer = ({ classes }) => {
+const Footer = ({ className }) => {
   function getTime() {
     const date = new Date();
     const hours = date.getHours();
@@ -8,7 +8,7 @@ const Footer = ({ classes }) => {
     return `${hours}:${minutes}`;
   }
   return (
-    <div className="h-20 w-[calc(100dvw-5rem)] bottom-0 fixed grid grid-cols-6 text-xs items-end z-20 font-jetbr pb-3 bg-background">
+    <div className={`h-20 w-[calc(100dvw-5rem)] bottom-0 fixed grid grid-cols-6 text-xs items-end font-jetbr pb-3 bg-background ${className}`}>
       <ul className="list-none">
         <li className="text-mutedForeground">Your Time</li>
         <li>{getTime()}</li>

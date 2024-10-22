@@ -1,5 +1,5 @@
 const defaultTheme = require("tailwindcss/defaultTheme");
- 
+
 const colors = require("tailwindcss/colors");
 const {
   default: flattenColorPalette,
@@ -38,11 +38,55 @@ module.exports = {
           "0%": { filter: "blur(0.3rem)" },
           "100%": { filter: "blur(0)" },
         },
+        "fade-in-down": {
+          "0%": {
+            opacity: 0,
+            transform: "translate3d(0, -100%, 0)",
+          },
+          "100%": {
+            opacity: 1,
+            transform: "translate3d(0, 0, 0)",
+          },
+        },
+        "fade-in-left": {
+          "0%": {
+            opacity: 0,
+            transform: "translate3d(-100%, 0, 0)",
+          },
+          "100%": {
+            opacity: 1,
+            transform: "translate3d(0, 0, 0)",
+          },
+        },
+        "fade-in-right": {
+          "0%": {
+            opacity: 0,
+            transform: "translate3d(100%, 0, 0)",
+          },
+          "100%": {
+            opacity: 1,
+            transform: "translate3d(0, 0, 0)",
+          },
+        },
+        "fade-in-up": {
+          "0%": {
+            opacity: 0,
+            transform: "translate3d(0, 100%, 0)",
+          },
+          "100%": {
+            opacity: 1,
+            transform: "translate3d(0, 0, 0)",
+          },
+        },
       },
       animation: {
-        fadeIn: "fadeIn 1s ease-in-out",
-        fadeOut: "fadeOut 1s ease-in-out",
+        fadeIn: "fadeIn 1.3s ease-in-out",
+        fadeOut: "fadeOut 1.3s ease-in-out",
         fadeOutSlower: "fadeOut 3s ease-in-out",
+        fadeUp: "fade-in-up 1.7s ease-in-out",
+        fadeDown: "fade-in-down 1.7s ease-in-out",
+        fadeLeft: "fade-in-left 1s ease-in-out",
+        fadeRight: "fade-in-right 1s ease-in-out",
       },
       colors: {
         background: "hsl(var(--background))",
@@ -99,14 +143,19 @@ module.exports = {
       },
     },
   },
-  plugins: [require("tailwindcss-animate"),addVariablesForColors],
+  plugins: [require("tailwindcss-animate"), addVariablesForColors],
+};
+module.exports.colors = {
+  background: "hsl(var(--background))",
+  foreground: "hsl(var(--foreground))",
+  mutedForeground: "var(--muted-foreground)",
 };
 function addVariablesForColors({ addBase, theme }) {
   let allColors = flattenColorPalette(theme("colors"));
   let newVars = Object.fromEntries(
     Object.entries(allColors).map(([key, val]) => [`--${key}`, val])
   );
- 
+
   addBase({
     ":root": newVars,
   });

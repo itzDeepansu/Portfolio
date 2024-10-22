@@ -1,5 +1,5 @@
 import React from "react";
-import {BackgroundBeams} from "@/components/ui/background-beams";
+import { BackgroundBeams } from "@/components/ui/background-beams";
 
 const Experiences = ({ className }) => {
   return (
@@ -29,8 +29,10 @@ const Experiences = ({ className }) => {
         </div>
         <div className="text-xs text-mutedForeground">
           I have experienced various environments like working for a
-          professional organization ( during my internship ) but I have also
-          experienced tensed environments of Hackathons.
+          <span className="text-foreground"> professional organization </span>(
+          during my internship ) but I have also experienced tensed environments
+          of
+          <span className="text-foreground"> Hackathons</span>.
         </div>
         <div className="flex flex-col gap-4 justify-start items-start text-xl mt-44">
           <div className="gap-2 flex flex-col">

@@ -9,11 +9,14 @@ const ProjectSection = ({ className }) => {
         Projects
         <div className="text-xs text-mutedForeground">
           I designed and developed these showcase projects with Figma, Spline,
-          React and ThreeJs in 2024.
+          React and
+          <span className="text-foreground"> ThreeJs </span>
+          in 2024.
         </div>
         <div className="text-xs text-mutedForeground">
           Various 3D elements/scenes are tailor-made to create more absorbing
-          user experiences. Click to view each project in detail.
+          <span className="text-foreground"> user experiences</span>. Click to
+          view each project in detail.
         </div>
       </div>
       <div className="flex flex-col gap-10">

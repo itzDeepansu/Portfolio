@@ -1,6 +1,5 @@
 import React from "react";
-import Expandable from "@/components/animata/carousel/expandable";
-
+import { BackgroundBeams } from "@/components/ui/background-beams";
 const ProjectSection = ({ className }) => {
   return (
     <section
@@ -22,6 +21,7 @@ const ProjectSection = ({ className }) => {
         <img src="/projects/DTC/DTC_Landing_Page_Light.png" alt="" />
         <img src="/projects/ECommerce/EComm_Landing_Page.png" alt="" />
       </div>
+      <BackgroundBeams />
     </section>
   );
 };

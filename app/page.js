@@ -27,7 +27,7 @@ export default function Home() {
   }, []);
 
   return (
-    <div className="image-container h-[5000px] relative mx-10 box-border font-jetbr">
+    <div className="image-container h-[3400px] relative mx-10 box-border font-jetbr">
       <Navbar classes="sticky top-0 animate-fadeDown" />
 
       <section

@@ -3,7 +3,6 @@ import {
   WebSkillsOne,
   WebSkillsTwo,
   AISkills,
-  BlockChainSkills,
 } from "./WebSkills";
 // import { BackgroundBeams } from "@/components/ui/background-beams";
 

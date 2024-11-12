@@ -30,8 +30,10 @@ const NewScrollImage = () => {
     setImageSources(sources);
   }, []);
 
-  // Scroll event to update image based on scroll position
+  // Smooth scrolling with requestAnimationFrame
   useEffect(() => {
+    let animationFrameId;
+
     const handleScroll = () => {
       const scrollTop = window.scrollY;
       const windowHeight = window.innerHeight;
@@ -41,18 +43,22 @@ const NewScrollImage = () => {
       );
 
       const index = Math.min(scrollTopPercentage, imageSources.length - 1);
-      setCurrentImageIndex(index);
+
+      // Use requestAnimationFrame to reduce unnecessary updates
+      animationFrameId = requestAnimationFrame(() => {
+        setCurrentImageIndex(index);
+      });
     };
 
-    // Initial image render on mount
     if (loadedImages.length > 0) {
-      drawImageOnCanvas(0);
+      drawImageOnCanvas(0); // Draw the first image when images are loaded
     }
 
-    // Scroll event listener
     window.addEventListener("scroll", handleScroll);
+
     return () => {
       window.removeEventListener("scroll", handleScroll);
+      cancelAnimationFrame(animationFrameId); // Clean up the animation frame on unmount
     };
   }, [imageSources, loadedImages]);
 
@@ -62,8 +68,9 @@ const NewScrollImage = () => {
     const ctx = canvas.getContext("2d");
     const currentImage = loadedImages[index];
     if (canvas && currentImage) {
-      canvas.width = canvas.offsetWidth;
-      canvas.height = canvas.offsetHeight;
+      // Set canvas dimensions based on its offsetWidth and offsetHeight
+      canvas.width = canvas.offsetWidth || 800;
+      canvas.height = canvas.offsetHeight || 620;
 
       // Clear the canvas before drawing the new image
       ctx.clearRect(0, 0, canvas.width, canvas.height);
@@ -87,7 +94,8 @@ const NewScrollImage = () => {
         style={{
           left: "50%",
           transform: "translate(-50%, 0%)",
-          height: "620px", // You can adjust height as needed  // You can adjust width as needed
+          height: "620px", // You can adjust height as needed
+           // Ensure it scales with the screen width
         }}
       />
     </div>

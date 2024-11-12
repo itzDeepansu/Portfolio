@@ -82,7 +82,7 @@ const Navbar = ({ classes }) => {
           className={`${
             scrollTopper >= 2170 ? "text-foreground" : "text-mutedForeground"
           } cursor-pointer`}
-          onClick={() => scrollToSection(2530, 2500)}
+          onClick={() => scrollToSection(2600, 2500)}
         >
           Achievements
         </li>

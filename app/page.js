@@ -27,7 +27,7 @@ export default function Home() {
   }, []);
 
   return (
-    <div className="image-container h-[3350px] relative mx-10 box-border font-jetbr overflow-clip">
+    <div className="image-container h-[3344px] relative mx-10 box-border font-jetbr overflow-clip">
       <Navbar classes="sticky top-0 animate-fadeDown" />
 
       <section
@@ -53,7 +53,7 @@ export default function Home() {
           <div className="h-[80dvh] flex flex-col justify-center gap-6 text-sm pl-16">
             <ul className="list-none">
               <li className="text-mutedForeground">
-                Hi! I$&pos;m Deepansu Siwach , an India based
+                Hi! I &pos; m Deepansu Siwach , an India based
               </li>
               <li>
                 creative web developer

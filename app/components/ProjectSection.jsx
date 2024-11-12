@@ -23,7 +23,7 @@ const ProjectSection = ({ className }) => {
         <div className="flex justify-center items-center relative group">
           <div className="absolute text-4xl group-hover:z-40">XZIST</div>
           <img
-            src="/projects/XIST/XIST_Login_Page_Dark.png"
+            src="/projects/XIST_Login_Page_Dark.png"
             alt=""
             className=" group-hover:blur-sm group-hover:opacity-60 cursor-pointer z-30  transition-transform duration-1000 linear hover:outline hover:outline-mutedForeground hover:outline-1"
           />
@@ -31,7 +31,7 @@ const ProjectSection = ({ className }) => {
         <div className="flex justify-center items-center relative group">
           <div className="absolute text-4xl group-hover:z-40">DTC Admin</div>
           <img
-            src="/projects/DTC/DTC_Landing_Page_Light.png"
+            src="/projects/DTC_Landing_Page_Light.png"
             alt=""
             className="group-hover:blur-sm group-hover:opacity-60 cursor-pointer z-30  transition-transform duration-1000 linear hover:outline hover:outline-mutedForeground hover:outline-1"
           />
@@ -39,7 +39,7 @@ const ProjectSection = ({ className }) => {
         <div className="flex justify-center items-center relative group">
           <div className="absolute text-4xl group-hover:z-40">ShopNi</div>
           <img
-            src="/projects/ECommerce/EComm_Landing_Page.png"
+            src="/projects/EComm_Landing_Page.png"
             alt=""
             className="group-hover:blur-sm group-hover:opacity-60 cursor-pointer z-30  transition-transform duration-1000 linear hover:outline hover:outline-mutedForeground hover:outline-1"
           />

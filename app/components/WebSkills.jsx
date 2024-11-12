@@ -23,7 +23,7 @@ import {
   SupabaseIcon,
   TensorflowIcon,
   WWWIcon,
-} from "./icons/icon";
+} from "../../components/icons/icon";
 
 export function WebSkillsOne() {
   const containerRef = useRef(null);

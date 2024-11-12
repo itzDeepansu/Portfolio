@@ -1,5 +1,5 @@
 import React from "react";
-import { BackgroundBeams } from "@/components/ui/background-beams";
+// import { BackgroundBeams } from "@/components/ui/background-beams";
 const ProjectSection = ({ className }) => {
   return (
     <section
@@ -25,7 +25,7 @@ const ProjectSection = ({ className }) => {
           <img
             src="/projects/XIST/XIST_Login_Page_Dark.png"
             alt=""
-            className=" group-hover:blur-sm group-hover:opacity-60 cursor-pointer z-30 hover:scale-105 transition-transform duration-1000 linear hover:outline hover:outline-mutedForeground hover:outline-1"
+            className=" group-hover:blur-sm group-hover:opacity-60 cursor-pointer z-30  transition-transform duration-1000 linear hover:outline hover:outline-mutedForeground hover:outline-1"
           />
         </div>
         <div className="flex justify-center items-center relative group">
@@ -33,7 +33,7 @@ const ProjectSection = ({ className }) => {
           <img
             src="/projects/DTC/DTC_Landing_Page_Light.png"
             alt=""
-            className="group-hover:blur-sm group-hover:opacity-60 cursor-pointer z-30 hover:scale-105 transition-transform duration-1000 linear hover:outline hover:outline-mutedForeground hover:outline-1"
+            className="group-hover:blur-sm group-hover:opacity-60 cursor-pointer z-30  transition-transform duration-1000 linear hover:outline hover:outline-mutedForeground hover:outline-1"
           />
         </div>
         <div className="flex justify-center items-center relative group">
@@ -41,11 +41,11 @@ const ProjectSection = ({ className }) => {
           <img
             src="/projects/ECommerce/EComm_Landing_Page.png"
             alt=""
-            className="group-hover:blur-sm group-hover:opacity-60 cursor-pointer z-30 hover:scale-105 transition-transform duration-1000 linear hover:outline hover:outline-mutedForeground hover:outline-1"
+            className="group-hover:blur-sm group-hover:opacity-60 cursor-pointer z-30  transition-transform duration-1000 linear hover:outline hover:outline-mutedForeground hover:outline-1"
           />
         </div>
       </div>
-      <BackgroundBeams />
+      {/* <BackgroundBeams /> */}
     </section>
   );
 };

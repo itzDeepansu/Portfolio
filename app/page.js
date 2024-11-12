@@ -8,7 +8,7 @@ import { useTheme } from "next-themes";
 import ProjectSection from "./components/ProjectSection";
 import Experiences from "./components/Experiences";
 import { Vortex } from "@/components/ui/vortex";
-import ScrollImage from "./components/ScrollImage";
+import NewScrollImage from "./components/NewScrollImage";
 
 export default function Home() {
   const { setTheme } = useTheme();
@@ -27,7 +27,7 @@ export default function Home() {
   }, []);
 
   return (
-    <div className="image-container h-[3400px] relative mx-10 box-border font-jetbr">
+    <div className="image-container h-[3350px] relative mx-10 box-border font-jetbr overflow-clip">
       <Navbar classes="sticky top-0 animate-fadeDown" />
 
       <section
@@ -42,7 +42,7 @@ export default function Home() {
           className="h-[80dvh] grid grid-cols-2 gap-96"
         >
           <div className="h-[80dvh] text-7xl overflow-hidden pt-36 pl-10">
-            <div className="font-dancing text-9xl">Creative</div>
+            <div className="font-dancing text-9xl text-foreground">Creative</div>
             <TypingText
               text="Developer."
               waitTime="1200"
@@ -93,21 +93,21 @@ export default function Home() {
       </section>
       <SkillsSection
         className={`${scrollTopper >= 260 ? "animate-fadeIn" : "hidden"} ${
-          scrollTopper >= 1370 ? "animate-fadeOut opacity-0" : ""
+          scrollTopper >= 1370 ? "animate-fadeOut opacity-0.1" : ""
         }`}
       />
 
       <ProjectSection
         className={`${scrollTopper >= 1370 ? "animate-fadeIn" : "hidden"} ${
-          scrollTopper >= 2170 ? "animate-fadeOut opacity-0" : ""
+          scrollTopper >= 2170 ? "animate-fadeOut opacity-0.1" : ""
         }`}
       />
       <Experiences
         className={`${scrollTopper >= 2170 ? "animate-fadeIn" : "hidden"} ${
-          scrollTopper >= 2970 ? "animate-fadeOut opacity-0" : ""
+          scrollTopper >= 2970 ? "animate-fadeOut opacity-0.1" : ""
         }`}
       />
-      <ScrollImage />
+      <NewScrollImage />
       <Footer className="animate-fadeUp" />
     </div>
   );

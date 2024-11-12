@@ -5,12 +5,12 @@ import {
   AISkills,
   BlockChainSkills,
 } from "./WebSkills";
-import { BackgroundBeams } from "@/components/ui/background-beams";
+// import { BackgroundBeams } from "@/components/ui/background-beams";
 
 const SkillsSection = ({ className }) => {
   return (
     <div className={`grid grid-cols-2 gap-[440px] mt-16 ${className}`}>
-      <BackgroundBeams />
+      {/* <BackgroundBeams /> */}
       <div className="flex flex-col gap-20">
         <div className="font-jetbr text-4xl pl-20 justify-start items-start flex flex-col gap-4 mt-24">
           Skills

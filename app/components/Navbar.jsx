@@ -1,3 +1,4 @@
+"use client"
 import React, { useState, useEffect } from "react";
 const scrollToSection = (targetY, duration) => {
   const startY = window.scrollY;
@@ -42,7 +43,7 @@ const Navbar = ({ classes }) => {
         <div className="text-mutedForeground">Available at :</div>
         <div className="underline">itzdeepansu@gmail.com</div>
       </div>
-      <ul className="pt-4 list-none pb-2">
+      <ul className="list-none">
         <li>Figma Designs</li>
         <li>React Next.js Three.js</li>
         <li className="text-mutedForeground">Gsap C++</li>

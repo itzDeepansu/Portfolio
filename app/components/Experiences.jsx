@@ -1,12 +1,12 @@
 import React from "react";
-import { BackgroundBeams } from "@/components/ui/background-beams";
+// import { BackgroundBeams } from "@/components/ui/background-beams";
 
 const Experiences = ({ className }) => {
   return (
     <section
       className={`h-[100dvh] grid grid-cols-2 gap-[440px] mt-52 ${className}`}
     >
-      <BackgroundBeams />
+      {/* <BackgroundBeams /> */}
       <div className="flex flex-col gap-10">
         <div className="flex">
           <img

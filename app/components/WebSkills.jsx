@@ -41,42 +41,42 @@ export function WebSkillsOne() {
     >
       <div
         ref={div1Ref}
-        className="flex items-center justify-center w-20 h-20 rounded-full  z-10 -translate-x-16"
+        className="flex items-center justify-center w-20 h-20 rounded-full  z-0 -translate-x-16"
       >
         <WWWIcon />
       </div>
       <div className="flex size-full flex-col items-center justify-between gap-2">
         <div
           ref={div2Ref}
-          className="flex items-center justify-center h-16  z-10 gap-2"
+          className="flex items-center justify-center h-16  z-0 gap-2"
         >
           <ReactIcon className="bg-background" />
           <div className="bg-background">React</div>
         </div>
         <div
           ref={div3Ref}
-          className="flex items-center justify-center h-20  z-10 gap-2"
+          className="flex items-center justify-center h-20  z-0 gap-2"
         >
           <ExpressIcon className="bg-background" />
           <div className="bg-background">Express</div>
         </div>
         <div
           ref={div4Ref}
-          className="flex items-center justify-center h-20  z-10 gap-2"
+          className="flex items-center justify-center h-20  z-0 gap-2"
         >
           <MongodbIcon className="bg-background" />
           <div className="bg-background">MongoDB</div>
         </div>
         <div
           ref={div5Ref}
-          className="flex items-center justify-center h-20  z-10 gap-2"
+          className="flex items-center justify-center h-20  z-0 gap-2"
         >
           <PostgresqlIcon className="bg-background" />
           <div className="bg-background">Postgresql</div>
         </div>
         <div
           ref={div6Ref}
-          className="flex items-center justify-center h-20  z-10 gap-2"
+          className="flex items-center justify-center h-20  z-0 gap-2"
         >
           <SupabaseIcon className="bg-background" />
           <div className="bg-background">Supabase</div>
@@ -137,35 +137,35 @@ export function WebSkillsTwo() {
       <div className="flex size-full flex-col items-center justify-between gap-2 mr-12">
         <div
           ref={div2Ref}
-          className="flex items-center justify-center h-16  z-10 gap-1"
+          className="flex items-center justify-center h-16  z-0 gap-1"
         >
           <div className="bg-background">Next.js</div>
           <NextjsIcon className="bg-background" />
         </div>
         <div
           ref={div3Ref}
-          className="flex items-center justify-center h-20  z-10 gap-1"
+          className="flex items-center justify-center h-20  z-0 gap-1"
         >
           <div className="bg-background">Socket.IO</div>
           <SocketioIcon className="bg-background" />
         </div>
         <div
           ref={div4Ref}
-          className="flex items-center justify-center h-20  z-10 gap-1"
+          className="flex items-center justify-center h-20  z-0 gap-1"
         >
           <div className="bg-background">Redis</div>
           <RedisIcon className="bg-background" />
         </div>
         <div
           ref={div5Ref}
-          className="flex items-center justify-center h-20  z-10 gap-1"
+          className="flex items-center justify-center h-20  z-0 gap-1"
         >
           <div className="bg-background">Docker</div>
           <DockerIcon className="bg-background" />
         </div>
         <div
           ref={div6Ref}
-          className="flex items-center justify-center h-20  z-10 gap-1"
+          className="flex items-center justify-center h-20  z-0 gap-1"
         >
           <div className="bg-background">Kubernetes</div>
           <KubernetesIcon className="bg-background" />
@@ -173,7 +173,7 @@ export function WebSkillsTwo() {
       </div>
       <div
         ref={div1Ref}
-        className="flex items-center justify-center w-20 h-20 rounded-full  z-10 translate-x-5"
+        className="flex items-center justify-center w-20 h-20 rounded-full  z-0 translate-x-5"
       >
         <WWWIcon />
       </div>
@@ -236,35 +236,35 @@ export function AISkills() {
     >
       <div
         ref={div1Ref}
-        className="flex items-center justify-center w-20 h-20 rounded-full  z-10 translate-x-5"
+        className="flex items-center justify-center w-20 h-20 rounded-full  z-0 translate-x-5"
       >
         <AIIcon className="bg-background" />
       </div>
       <div className="flex size-full flex-col items-center justify-between gap-2 mr-12">
         <div
           ref={div2Ref}
-          className="flex items-center justify-center h-12  z-10 gap-1"
+          className="flex items-center justify-center h-12  z-0 gap-1"
         >
           <div className="bg-background">Python</div>
           <PythonIcon className="bg-background" />
         </div>
         <div
           ref={div3Ref}
-          className="flex items-center justify-center h-20  z-10 gap-1"
+          className="flex items-center justify-center h-20  z-0 gap-1"
         >
           <div className="bg-background">Pandas</div>
           <PandasIcon className="bg-background" />
         </div>
         <div
           ref={div4Ref}
-          className="flex items-center justify-center h-20  z-10 gap-1"
+          className="flex items-center justify-center h-20  z-0 gap-1"
         >
           <div className="bg-background">TensorFlow</div>
           <TensorflowIcon className="bg-background" />
         </div>
         <div
           ref={div5Ref}
-          className="flex items-center justify-center  h-20  z-10 gap-1"
+          className="flex items-center justify-center  h-20  z-0 gap-1"
         >
           <div className="bg-background">Keras</div>
           <KerasIcon className="bg-background" />
@@ -329,7 +329,7 @@ export function BlockChainSkills() {
         </div>
         <div
           ref={div3Ref}
-          className="flex items-center justify-center gap-2 h-20 z-10"
+          className="flex items-center justify-center gap-2 h-20 z-0"
         >
           <SolanaIcon className="bg-background" />
           <div className="bg-background">Solana</div>

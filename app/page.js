@@ -53,7 +53,7 @@ export default function Home() {
           <div className="h-[80dvh] flex flex-col justify-center gap-6 text-sm pl-16">
             <ul className="list-none">
               <li className="text-mutedForeground">
-                Hi! I'm Deepansu Siwach , an India based
+                Hi! I$&pos;m Deepansu Siwach , an India based
               </li>
               <li>
                 creative web developer

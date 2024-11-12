@@ -9,6 +9,7 @@ import ProjectSection from "./components/ProjectSection";
 import Experiences from "./components/Experiences";
 import { Vortex } from "@/components/ui/vortex";
 import NewScrollImage from "./components/NewScrollImage";
+import ScrollImage from "./components/ScrollImage";
 
 export default function Home() {
   const { setTheme } = useTheme();
@@ -27,7 +28,7 @@ export default function Home() {
   }, []);
 
   return (
-    <div className="image-container h-[3350px] relative mx-10 box-border font-jetbr overflow-clip">
+    <div className="image-container h-[3344px] relative mx-10 box-border font-jetbr overflow-clip">
       <Navbar classes="sticky top-0 animate-fadeDown" />
 
       <section
@@ -107,7 +108,7 @@ export default function Home() {
           scrollTopper >= 2970 ? "animate-fadeOut opacity-0.1" : ""
         }`}
       />
-      <NewScrollImage />
+      <ScrollImage />
       <Footer className="animate-fadeUp" />
     </div>
   );

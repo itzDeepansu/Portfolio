@@ -3,13 +3,13 @@ import React from "react";
 const ProjectSection = ({ className }) => {
   return (
     <section
-      className={`h-[100dvh] grid grid-cols-2 gap-[440px] mt-16 ${className}`}
+      className={`h-[100dvh] grid lg:grid-cols-2 lg:gap-[440px] mt-16 ${className}`}
     >
-      <div className="font-jetbr text-4xl pl-20 h-full justify-start items-start flex flex-col gap-4">
+      <div className="font-jetbr text-4xl lg:pl-20 h-full justify-start items-start flex flex-col gap-4">
         Projects
         <div className="text-xs text-mutedForeground">
-          I designed and developed these showcase projects with Figma, Spline,
-          React and
+          I designed and developed these showcase projects with Figma, React,
+          Next.js and
           <span className="text-foreground"> ThreeJs </span>
           in 2024.
         </div>
@@ -19,11 +19,11 @@ const ProjectSection = ({ className }) => {
           view each project in detail.
         </div>
       </div>
-      <div className="flex flex-col gap-10">
+      <div className="flex flex-col mt-10 lg:mt-0 gap-10 h-[100%] lg:h-fit overflow-clip">
         <div className="flex justify-center items-center relative group">
           <div className="absolute text-4xl group-hover:z-40">XZIST</div>
           <img
-            src="/projects/XIST_Login_Page_Dark.png"
+            src="/projects/xist.png"
             alt=""
             className=" group-hover:blur-sm group-hover:opacity-60 cursor-pointer z-30  transition-transform duration-1000 linear hover:outline hover:outline-mutedForeground hover:outline-1"
           />
@@ -31,7 +31,7 @@ const ProjectSection = ({ className }) => {
         <div className="flex justify-center items-center relative group">
           <div className="absolute text-4xl group-hover:z-40">DTC Admin</div>
           <img
-            src="/projects/DTC_Landing_Page_Light.png"
+            src="/projects/dtc.png"
             alt=""
             className="group-hover:blur-sm group-hover:opacity-60 cursor-pointer z-30  transition-transform duration-1000 linear hover:outline hover:outline-mutedForeground hover:outline-1"
           />
@@ -39,7 +39,7 @@ const ProjectSection = ({ className }) => {
         <div className="flex justify-center items-center relative group">
           <div className="absolute text-4xl group-hover:z-40">ShopNi</div>
           <img
-            src="/projects/EComm_Landing_Page.png"
+            src="/projects/ecom.png"
             alt=""
             className="group-hover:blur-sm group-hover:opacity-60 cursor-pointer z-30  transition-transform duration-1000 linear hover:outline hover:outline-mutedForeground hover:outline-1"
           />

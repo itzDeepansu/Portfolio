@@ -1,5 +1,12 @@
-"use client"
+"use client";
 import React, { useState, useEffect } from "react";
+import {
+  Popover,
+  PopoverContent,
+  PopoverTrigger,
+} from "@/components/ui/popover";
+import { CollapsibleIcon } from "@/components/icons/icon";
+
 const scrollToSection = (targetY, duration) => {
   const startY = window.scrollY;
   const distance = targetY - startY;
@@ -39,17 +46,68 @@ const Navbar = ({ classes }) => {
       className={`h-20 ${classes} font-jetbr flex justify-between pt-3 text-xs bg-background z-40`}
     >
       <div className="font-bebas text-xl">Deepansu</div>
-      <div>
+      <div className="hidden lg:block">
         <div className="text-mutedForeground">Available at :</div>
         <div className="underline">itzdeepansu@gmail.com</div>
       </div>
       <ul className="list-none">
         <li>Figma Designs</li>
-        <li>React Next.js Three.js</li>
-        <li className="text-mutedForeground">Gsap C++</li>
-        <li className="text-mutedForeground">Python</li>
+        <li className="">React Next.js Three.js</li>
+        <li className="text-mutedForeground hidden lg:block">Gsap C++</li>
+        <li className="text-mutedForeground hidden lg:block">Python</li>
       </ul>
-      <ul className="list-none">
+      <div className="block lg:hidden">
+        <Popover>
+          <PopoverTrigger className="flex h-fit">
+            <CollapsibleIcon />
+          </PopoverTrigger>
+          <PopoverContent className="mr-2">
+            <ul className="list-none">
+              <li
+                className={`${
+                  scrollTopper <= 260
+                    ? "text-foreground"
+                    : "text-mutedForeground"
+                } cursor-pointer`}
+                onClick={() => scrollToSection(0, 2000)}
+              >
+                Home
+              </li>
+              <li
+                className={`${
+                  scrollTopper >= 260 && scrollTopper <= 1370
+                    ? "text-foreground"
+                    : "text-mutedForeground"
+                } cursor-pointer`}
+                onClick={() => scrollToSection(670, 2000)}
+              >
+                Skills
+              </li>
+              <li
+                className={`${
+                  scrollTopper >= 1370 && scrollTopper <= 2170
+                    ? "text-foreground"
+                    : "text-mutedForeground"
+                } cursor-pointer`}
+                onClick={() => scrollToSection(1600, 2000)}
+              >
+                Projects
+              </li>
+              <li
+                className={`${
+                  scrollTopper >= 2170
+                    ? "text-foreground"
+                    : "text-mutedForeground"
+                } cursor-pointer`}
+                onClick={() => scrollToSection(2610, 2500)}
+              >
+                Achievements
+              </li>
+            </ul>
+          </PopoverContent>
+        </Popover>
+      </div>
+      <ul className="list-none hidden lg:block">
         <li
           className={`${
             scrollTopper <= 260 ? "text-foreground" : "text-mutedForeground"
@@ -82,7 +140,7 @@ const Navbar = ({ classes }) => {
           className={`${
             scrollTopper >= 2170 ? "text-foreground" : "text-mutedForeground"
           } cursor-pointer`}
-          onClick={() => scrollToSection(2600, 2500)}
+          onClick={() => scrollToSection(2610, 2500)}
         >
           Achievements
         </li>

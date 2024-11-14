@@ -9,10 +9,9 @@ import {
 
 const SkillsSection = ({ className }) => {
   return (
-    <div className={`grid grid-cols-2 gap-[440px] mt-16 ${className}`}>
-      {/* <BackgroundBeams /> */}
-      <div className="flex flex-col gap-20">
-        <div className="font-jetbr text-4xl pl-20 justify-start items-start flex flex-col gap-4 mt-24">
+    <div className={`grid justify-center lg:grid-cols-2 gap-10 lg:gap-[440px] mt-16 ${className}`}>
+      <div className="flex flex-col gap-20 w-full h-fit">
+        <div className="font-jetbr text-4xl pl-16 w-full lg:pl-20 justify-start items-start flex flex-col gap-4 mt-24">
           Skills
           <div className="text-xs text-mutedForeground">
             Skilled in building dynamic,
@@ -23,7 +22,7 @@ const SkillsSection = ({ className }) => {
             and
             <span className="text-foreground"> performance optimization.</span>
           </div>
-          <div className="text-xs text-mutedForeground">
+          <div className="text-xs text-mutedForeground h-fit">
             Proficient in Python, TensorFlow, Keras, and Pandas, with experience
             in machine learning,
             <span className="text-foreground">data analysis </span>
@@ -34,7 +33,7 @@ const SkillsSection = ({ className }) => {
         <WebSkillsTwo />
       </div>
       <div className="flex flex-col gap-10">
-        <WebSkillsOne />
+        <WebSkillsOne/>
         <AISkills />
         {/* <BlockChainSkills /> */}
       </div>

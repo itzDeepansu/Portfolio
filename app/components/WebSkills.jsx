@@ -36,7 +36,7 @@ export function WebSkillsOne() {
 
   return (
     <div
-      className="relative flex w-full items-center justify-center overflow-hidden rounded-lg bg-background p-10 gap-40 pl-16"
+      className="hidden lg:flex relative w-full items-center justify-center overflow-hidden rounded-lg bg-background p-10 gap-40 pl-16"
       ref={containerRef}
     >
       <div
@@ -131,10 +131,10 @@ export function WebSkillsTwo() {
 
   return (
     <div
-      className="relative flex w-full items-center justify-center overflow-hidden rounded-lg bg-background p-10 gap-40 pr-10"
+      className="relative flex w-full items-center justify-center overflow-hidden rounded-lg bg-background lg:p-10 gap-40 lg:pr-10"
       ref={containerRef}
     >
-      <div className="flex size-full flex-col items-center justify-between gap-2 mr-12">
+      <div className="flex h-full w-fit flex-col items-center justify-between gap-2 lg:mr-12">
         <div
           ref={div2Ref}
           className="flex items-center justify-center h-16  z-0 gap-1"
@@ -173,7 +173,7 @@ export function WebSkillsTwo() {
       </div>
       <div
         ref={div1Ref}
-        className="flex items-center justify-center w-20 h-20 rounded-full  z-0 translate-x-5"
+        className="flex items-center justify-center w-20 h-20 rounded-full  z-0 lg:translate-x-5"
       >
         <WWWIcon />
       </div>
@@ -236,11 +236,11 @@ export function AISkills() {
     >
       <div
         ref={div1Ref}
-        className="flex items-center justify-center w-20 h-20 rounded-full  z-0 translate-x-5"
+        className="flex items-center justify-center w-20 h-20 rounded-full  z-0 -translate-x-10 lg:translate-x-5"
       >
         <AIIcon className="bg-background" />
       </div>
-      <div className="flex size-full flex-col items-center justify-between gap-2 mr-12">
+      <div className="flex w-fit flex-col items-center justify-between gap-2 lg:mr-12">
         <div
           ref={div2Ref}
           className="flex items-center justify-center h-12  z-0 gap-1"

@@ -23,5 +23,5 @@ const AvatarComp = memo(({ className }) => { // Wrap with memo
     </div>
   );
 }); // Close memo wrapper
-
+AvatarComp.displayName = "AvatarComp";
 export default AvatarComp;

@@ -34,7 +34,11 @@ const Experiences = ({ className }) => {
           of
           <span className="text-foreground"> Hackathons</span>.
         </div>
-        <div className="flex flex-col gap-4 justify-start items-start text-xl mt-10 lg:mt-44">
+        <div className="flex flex-col gap-4 justify-start items-start text-xl mt-10 lg:mt-40">
+          <div className="text-xs text-mutedForeground">
+            <div className="text-xl text-foreground">CP :</div>
+            <span className="text-foreground">LeetCode</span> - 160
+          </div>
           <div className="gap-2 flex flex-col">
             <div>Hackathons:</div>
             <ul className="text-xs text-mutedForeground pl-20 list-none">

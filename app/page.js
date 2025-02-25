@@ -8,26 +8,37 @@ import { useTheme } from "next-themes";
 import ProjectSection from "./components/ProjectSection";
 import Experiences from "./components/Experiences";
 import { Vortex } from "@/components/ui/vortex";
-import ScrollImage from "./components/ScrollImage";
+import AvatarComp from "./components/AvatarComp";
+import { debounce } from "lodash";
 
 export default function Home() {
   const { setTheme } = useTheme();
   const [scrollTopper, setScrollTopper] = useState(0);
   setTheme("dark");
+
   useEffect(() => {
     window.scrollTo(0, 0);
+
     const handleScroll = () => {
       setScrollTopper(window.scrollY);
     };
-    window.addEventListener("scroll", handleScroll);
+
+    const debouncedScrollHandler = debounce(handleScroll, 100, {
+      leading: true,
+      trailing: true,
+    }); // Adjust delay as needed
+
+    window.addEventListener("scroll", debouncedScrollHandler, {
+      passive: true,
+    });
 
     return () => {
-      window.removeEventListener("scroll", handleScroll);
+      window.removeEventListener("scroll", debouncedScrollHandler);
     };
   }, []);
 
   return (
-    <div className="image-container h-[3354px] relative mx-4 xl:mx-10 box-border font-jetbr overflow-clip">
+    <div className="image-container h-[3430px] relative mx-4 xl:mx-10 box-border font-jetbr overflow-clip">
       <Navbar classes="sticky top-0 animate-fadeDown" />
 
       <section
@@ -67,7 +78,7 @@ export default function Home() {
               <span className="text-white"> Machine Learning </span>. I want to
               use my skills of Web and AI to solve{" "}
               <TypingText
-                text=" real world problems"
+                text="real world problems"
                 waitTime="1200"
                 hideCursorOnComplete={true}
                 delay={60}
@@ -80,23 +91,24 @@ export default function Home() {
         </Vortex>
       </section>
       <SkillsSection
-        className={`${scrollTopper >= 260 ? "animate-fadeIn" : "hidden"} ${
+        className={`${scrollTopper >= 260 ? "animate-fadeIn" : "opacity-0"} ${
           scrollTopper >= 1370 ? "animate-fadeOut opacity-0.1" : ""
         }`}
       />
 
       <ProjectSection
-        className={`${scrollTopper >= 1370 ? "animate-fadeIn" : "hidden"} ${
+        className={`${scrollTopper >= 1370 ? "animate-fadeIn" : "opacity-0"} ${
           scrollTopper >= 2170 ? "animate-fadeOut opacity-0.1" : ""
         }`}
       />
       <Experiences
-        className={`${scrollTopper >= 2170 ? "animate-fadeIn" : "hidden"} ${
+        className={`${scrollTopper >= 2170 ? "animate-fadeIn" : "opacity-0"} ${
           scrollTopper >= 2970 ? "animate-fadeOut opacity-0.1" : ""
         }`}
       />
 
-      <ScrollImage className="hidden lg:block" />
+      {/* <ScrollImage className="hidden lg:block" /> */}
+      <AvatarComp className="fixed bottom-0 h-full w-full bg-transparent z-10" />
       <Footer className="animate-fadeUp" />
     </div>
   );

@@ -43,7 +43,7 @@ const Navbar = ({ classes }) => {
   }, []);
   return (
     <div
-      className={`h-20 ${classes} font-jetbr flex justify-between pt-3 text-xs bg-background z-40`}
+      className={`bg-background/80 backdrop-blur-md h-20 ${classes} font-jetbr flex justify-between pt-3 text-xs bg-background z-40`}
     >
       <div className="font-bebas text-xl">Deepansu</div>
       <div className="hidden lg:block">
@@ -79,7 +79,7 @@ const Navbar = ({ classes }) => {
                     ? "text-foreground"
                     : "text-mutedForeground"
                 } cursor-pointer`}
-                onClick={() => scrollToSection(670, 2000)}
+                onClick={() => scrollToSection(700, 2000)}
               >
                 Skills
               </li>
@@ -99,7 +99,7 @@ const Navbar = ({ classes }) => {
                     ? "text-foreground"
                     : "text-mutedForeground"
                 } cursor-pointer`}
-                onClick={() => scrollToSection(2610, 2500)}
+                onClick={() => scrollToSection(2810, 2500)}
               >
                 Achievements
               </li>

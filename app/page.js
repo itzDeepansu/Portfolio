@@ -11,10 +11,11 @@ import { Vortex } from "@/components/ui/vortex";
 import NewScrollImage from "./components/NewScrollImage";
 import ScrollImage from "./components/ScrollImage";
 import ThirdScrollImage from "./components/ThirdScrollImage";
-
+import { DNA } from "react-loader-spinner";
 export default function Home() {
   const { setTheme } = useTheme();
   const [scrollTopper, setScrollTopper] = useState(0);
+  const[isLoading, setIsLoading] = useState(true);
   setTheme("dark");
   useEffect(() => {
     window.scrollTo(0, 0);
@@ -22,14 +23,32 @@ export default function Home() {
       setScrollTopper(window.scrollY);
     };
     window.addEventListener("scroll", handleScroll);
-
+    const timeout = setTimeout(() => {
+      setIsLoading(false);
+    }, 2500);
     return () => {
       window.removeEventListener("scroll", handleScroll);
+      clearTimeout(timeout);
     };
   }, []);
-
+  if (isLoading) {
+    return (
+      <div className="flex items-center justify-center h-screen w-screen bg-background animate-fadeIn">
+        {/* <div className="animate-spin rounded-full h-16 w-16 border-t-4 border-white"></div>
+         */}
+        <DNA
+          visible={true}
+          height="300"
+          width="300"
+          ariaLabel="dna-loading"
+          wrapperStyle={{}}
+          wrapperClass="blur-sm scale-200 scale-[20]"
+        />
+      </div>
+    );
+  }
   return (
-    <div className="image-container h-[3344px] relative mx-10 box-border font-jetbr overflow-clip">
+    <div className="image-container h-[3350px] relative mx-10 box-border font-jetbr overflow-clip">
       <Navbar classes="sticky top-0 animate-fadeDown" />
 
       <section

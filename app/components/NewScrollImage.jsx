@@ -86,11 +86,11 @@ const NewScrollImage = () => {
   }, [currentImageIndex, loadedImages]);
 
   return (
-    <div className="relative z-0">
+    <div className="relative z-10">
       {/* Canvas to display the images */}
       <canvas
         ref={canvasRef}
-        className="fixed bottom-0"
+        className="fixed bottom-0 animate-fadeIn"
         style={{
           left: "50%",
           transform: "translate(-50%, 0%)",

@@ -40,8 +40,15 @@ const Navbar = ({ classes }) => {
     >
       <div className="font-bebas text-xl">Deepansu</div>
       <div>
-        <div className="text-mutedForeground">Available at :</div>
-        <div className="underline">itzdeepansu@gmail.com</div>
+      <div className="text-mutedForeground">Available at :</div>
+        <div className="underline">
+          <a
+            href="mailto:itzdeepansu@gmail.com"
+            className="text-mutedForeground hover:text-foreground w-fit cursor-pointer"
+          >
+            itzdeepansu@gmail.com
+          </a>
+        </div>
       </div>
       <ul className="list-none">
         <li>Figma Designs</li>
@@ -82,7 +89,7 @@ const Navbar = ({ classes }) => {
           className={`${
             scrollTopper >= 2170 ? "text-foreground" : "text-mutedForeground"
           } cursor-pointer`}
-          onClick={() => scrollToSection(2600, 2500)}
+          onClick={() => scrollToSection(2630, 2500)}
         >
           Achievements
         </li>

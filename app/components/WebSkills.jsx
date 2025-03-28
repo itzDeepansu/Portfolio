@@ -41,45 +41,45 @@ export function WebSkillsOne() {
     >
       <div
         ref={div1Ref}
-        className="flex items-center justify-center w-20 h-20 rounded-full  z-0 -translate-x-16"
+        className="flex items-center justify-center w-20 h-20 rounded-full  z-10 -translate-x-16 bg-background"
       >
         <WWWIcon />
       </div>
       <div className="flex size-full flex-col items-center justify-between gap-2">
         <div
           ref={div2Ref}
-          className="flex items-center justify-center h-16  z-0 gap-2"
+          className="flex items-center justify-center h-16  z-10 gap-2 bg-background"
         >
-          <ReactIcon className="bg-background" />
-          <div className="bg-background">React</div>
+          <ReactIcon />
+          <div >React</div>
         </div>
         <div
           ref={div3Ref}
-          className="flex items-center justify-center h-20  z-0 gap-2"
+          className="flex items-center justify-center h-20  z-10 gap-2 bg-background"
         >
-          <ExpressIcon className="bg-background" />
-          <div className="bg-background">Express</div>
+          <ExpressIcon  />
+          <div >Express</div>
         </div>
         <div
           ref={div4Ref}
-          className="flex items-center justify-center h-20  z-0 gap-2"
+          className="flex items-center justify-center h-20 z-10 gap-2 bg-background"
         >
-          <MongodbIcon className="bg-background" />
-          <div className="bg-background">MongoDB</div>
+          <MongodbIcon />
+          <div>MongoDB</div>
         </div>
         <div
           ref={div5Ref}
-          className="flex items-center justify-center h-20  z-0 gap-2"
+          className="flex items-center justify-center h-20  z-10 gap-2 bg-background"
         >
-          <PostgresqlIcon className="bg-background" />
-          <div className="bg-background">Postgresql</div>
+          <PostgresqlIcon  />
+          <div >Postgresql</div>
         </div>
         <div
           ref={div6Ref}
-          className="flex items-center justify-center h-20  z-0 gap-2"
+          className="flex items-center justify-center h-20  z-10 gap-2 bg-background"
         >
-          <SupabaseIcon className="bg-background" />
-          <div className="bg-background">Supabase</div>
+          <SupabaseIcon />
+          <div >Supabase</div>
         </div>
       </div>
       <AnimatedBeam
@@ -137,43 +137,43 @@ export function WebSkillsTwo() {
       <div className="flex size-full flex-col items-center justify-between gap-2 mr-12">
         <div
           ref={div2Ref}
-          className="flex items-center justify-center h-16  z-0 gap-1"
+          className="flex items-center justify-center h-16  z-10 gap-1 bg-background"
         >
-          <div className="bg-background">Next.js</div>
-          <NextjsIcon className="bg-background" />
+          <div >Next.js</div>
+          <NextjsIcon  />
         </div>
         <div
           ref={div3Ref}
-          className="flex items-center justify-center h-20  z-0 gap-1"
+          className="flex items-center justify-center h-20  z-10 gap-1 bg-background"
         >
-          <div className="bg-background">Socket.IO</div>
-          <SocketioIcon className="bg-background" />
+          <div >Socket.IO</div>
+          <SocketioIcon  />
         </div>
         <div
           ref={div4Ref}
-          className="flex items-center justify-center h-20  z-0 gap-1"
+          className="flex items-center justify-center h-20  z-10 gap-1 bg-background"
         >
-          <div className="bg-background">Redis</div>
-          <RedisIcon className="bg-background" />
+          <div >Redis</div>
+          <RedisIcon  />
         </div>
         <div
           ref={div5Ref}
-          className="flex items-center justify-center h-20  z-0 gap-1"
+          className="flex items-center justify-center h-20  z-10 gap-1 bg-background"
         >
-          <div className="bg-background">Docker</div>
-          <DockerIcon className="bg-background" />
+          <div >Docker</div>
+          <DockerIcon  />
         </div>
         <div
           ref={div6Ref}
-          className="flex items-center justify-center h-20  z-0 gap-1"
+          className="flex items-center justify-center h-20  z-10 gap-1 bg-background"
         >
-          <div className="bg-background">Kubernetes</div>
-          <KubernetesIcon className="bg-background" />
+          <div >Kubernetes</div>
+          <KubernetesIcon  />
         </div>
       </div>
       <div
         ref={div1Ref}
-        className="flex items-center justify-center w-20 h-20 rounded-full  z-0 translate-x-5"
+        className="flex items-center justify-center w-20 h-20 rounded-full  z-10 translate-x-5 bg-background"
       >
         <WWWIcon />
       </div>
@@ -236,38 +236,38 @@ export function AISkills() {
     >
       <div
         ref={div1Ref}
-        className="flex items-center justify-center w-20 h-20 rounded-full  z-0 translate-x-5"
+        className="flex items-center justify-center w-20 h-20 rounded-full  z-10 translate-x-5 bg-background"
       >
         <AIIcon className="bg-background" />
       </div>
       <div className="flex size-full flex-col items-center justify-between gap-2 mr-12">
         <div
           ref={div2Ref}
-          className="flex items-center justify-center h-12  z-0 gap-1"
+          className="flex items-center justify-center h-12  z-10 gap-1 bg-background"
         >
-          <div className="bg-background">Python</div>
-          <PythonIcon className="bg-background" />
+          <div >Python</div>
+          <PythonIcon  />
         </div>
         <div
           ref={div3Ref}
-          className="flex items-center justify-center h-20  z-0 gap-1"
+          className="flex items-center justify-center h-20  z-10 gap-1 bg-background"
         >
-          <div className="bg-background">Pandas</div>
-          <PandasIcon className="bg-background" />
+          <div >Pandas</div>
+          <PandasIcon  />
         </div>
         <div
           ref={div4Ref}
-          className="flex items-center justify-center h-20  z-0 gap-1"
+          className="flex items-center justify-center h-20  z-10 gap-1 bg-background"
         >
-          <div className="bg-background">TensorFlow</div>
-          <TensorflowIcon className="bg-background" />
+          <div >TensorFlow</div>
+          <TensorflowIcon  />
         </div>
         <div
           ref={div5Ref}
-          className="flex items-center justify-center  h-20  z-0 gap-1"
+          className="flex items-center justify-center  h-20  z-10 gap-1 bg-background"
         >
-          <div className="bg-background">Keras</div>
-          <KerasIcon className="bg-background" />
+          <div >Keras</div>
+          <KerasIcon  />
         </div>
       </div>
 

@@ -4,10 +4,10 @@ import React from "react";
 const Experiences = ({ className }) => {
   return (
     <section
-      className={`h-[100dvh] grid grid-cols-2 gap-[440px] mt-52 ${className}`}
+      className={`h-[100dvh] grid sm:grid-cols-2 gap-10 lg:gap-[440px] mt-52 ${className}`}
     >
       {/* <BackgroundBeams /> */}
-      <div className="flex flex-col gap-10">
+      <div className="hidden sm:flex flex-col gap-10">
         <div className="flex">
           <img
             src="/Experiences/Global_Trendz.png"
@@ -22,7 +22,7 @@ const Experiences = ({ className }) => {
         </div>
         <img src="/Experiences/SIH.jpg" alt="" className="rounded-sm" />
       </div>
-      <div className="font-jetbr text-4xl pl-20 h-full justify-start items-start flex flex-col gap-4">
+      <div className="font-jetbr text-4xl lg:pl-20 h-full mx-auto sm:justify-start sm:items-start flex flex-col gap-4">
         Experience
         <div className="text-xs text-mutedForeground">
           I have experience of working alone and in teams.
@@ -34,20 +34,46 @@ const Experiences = ({ className }) => {
           of
           <span className="text-foreground"> Hackathons</span>.
         </div>
-        <div className="flex flex-col gap-4 justify-start items-start text-xl mt-44">
-          <div className="gap-2 flex flex-col">
-            <div>Hackathons:</div>
-            <ul className="text-xs text-mutedForeground pl-20 list-none">
-              <li>SIH Round 5 - 2024</li>
-              <li>HackWithChandigarh Finalist - 2024 (September)</li>
-              <li>CodeForEarth Winner -2024 (September)</li>
-              <li>Zinnovatio Finalist - 2024 (October)</li>
-            </ul>
-          </div>
+        <div className="flex flex-col gap-4 justify-start items-start text-xl mt-10 lg:mt-40">
           <div className="gap-2 flex flex-col">
             <div>Internships:</div>
             <div className="text-xs text-mutedForeground pl-20">
-              Global Trendz - 2024 (June - July)
+              <div className="text-foreground">Global Trendz</div> Frontend
+              Engineer - 2024 (June - July)
+            </div>
+          </div>
+          <div className="gap-2 flex flex-col">
+            <div>Hackathons:</div>
+            <ul className="text-xs text-mutedForeground pl-20 list-none">
+              <li>
+                <span className="text-foreground">SIH Round 5</span> -{" "}
+                <span className="float-right">2024</span>
+              </li>
+              <li>
+                <span className="text-foreground">
+                  HackWithChandigarh Finalist
+                </span>{" "}
+                - <span className="float-right">2024</span>
+              </li>
+              <li>
+                <span className="text-foreground ml-auto">
+                  CodeForEarth Winner
+                </span>{" "}
+                - <span className="float-right">2024</span>{" "}
+              </li>
+              <li>
+                <span className="text-foreground">Zinnovatio Finalist</span> -{" "}
+                <span className="float-right">2024</span>
+              </li>
+            </ul>
+          </div>
+          <div className="text-xs text-mutedForeground gap-2 flex flex-col">
+            <div className="text-xl text-foreground">
+              Competetive Programming :
+            </div>
+            <div>
+              <span className="text-foreground pl-20">LeetCode</span> - 200+
+              Questions
             </div>
           </div>
         </div>

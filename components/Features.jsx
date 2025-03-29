@@ -56,7 +56,7 @@ const Features = () => {
       </div>
       
       {/* Gradient effect */}
-      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[500px] h-[500px] bg-primary/10 rounded-full filter blur-[120px] opacity-30 pointer-events-none"></div>
+      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[500px] h-[500px] bg-primarysecond/30 rounded-full filter blur-[120px] opacity-30 pointer-events-none"></div>
     </section>
   );
 };

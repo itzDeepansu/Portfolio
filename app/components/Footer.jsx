@@ -25,7 +25,7 @@ const Footer = ({ className }) => {
     window.location.href = `mailto:${email}`;
   };
   return (
-    <div className={`z-50 bg-background/20 backdrop-blur-md max-h-20 w-full fixed bottom-0 grid grid-cols-6 text-xs items-end font-jetbr pb-1 ${className}`}>
+    <div className={`z-50 bg-black/10 backdrop-blur-md max-h-20 w-full fixed bottom-0 grid grid-cols-6 text-xs items-end font-jetbr pb-1 ${className}`}>
       <ul className="list-none">
         <li className="text-mutedForeground">Time</li>
         <li>{convertToIST(date.getTime())}</li>

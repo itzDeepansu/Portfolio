@@ -3,7 +3,6 @@ import { MessageSquare } from "lucide-react";
 import Link from "next/link";
 const ProjectNavbar = () => {
   const [scrolled, setScrolled] = useState(false);
-
   const [lastSegment, setLastSegment] = useState("");
   useEffect(() => {
     const handleScroll = () => {

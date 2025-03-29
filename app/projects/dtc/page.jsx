@@ -1,35 +1,24 @@
-// import React from "react";
-// import Header from "@/components/Header";
-// import Hero from "@/components/Hero";
-// import Features from "@/components/Features";
-// import HowItWorks from "@/components/HowItWorks";
-// import Technology from "@/components/Technology";
-// import Footer from "@/components/Footer";
+import React from "react";
+import Header from "@/components/DTC/Header";
+import Hero from "@/components/DTC/Hero";
+import Features from "@/components/DTC/Features";
+import HowItWorks from "@/components/DTC/HowItWorks";
+import Technology from "@/components/DTC/Technology";
+import Footer from "@/app/components/Footer";
 
-// const page = () => {
-//   return (
-//     <div className="min-h-screen bg-background">
-//       <Header />
-//       <main>
-//         <Hero />
-//         <Features />
-//         <HowItWorks />
-//         <Technology />
-//       </main>
-//       <Footer />
-//     </div>
-//   );
-// };
-
-// export default page;
-import React from 'react'
-
-const page = () => {
+const Page = () => {
   return (
-    <div>
-      
+    <div className="min-h-screen bg-background font-jetbr">
+      <Header />
+      <main className="flex flex-col items-center">
+        <Hero />
+        <HowItWorks />
+        <Features />
+        <Technology />
+      </main>
+      <Footer />
     </div>
-  )
-}
+  );
+};
 
-export default page
+export default Page;

@@ -11,6 +11,7 @@ module.exports = {
     "./pages/**/*.{js,ts,jsx,tsx,mdx}",
     "./components/**/*.{js,ts,jsx,tsx,mdx}",
     "./app/**/*.{js,ts,jsx,tsx,mdx}",
+    "./src/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
     extend: {
@@ -89,6 +90,7 @@ module.exports = {
         fadeRight: "fade-in-right 1s ease-in-out",
       },
       colors: {
+        primarysecond: "hsl(var(--primary2))",
         background: "hsl(var(--background))",
         foreground: "hsl(var(--foreground))",
         mutedForeground: "var(--muted-foreground)",
@@ -130,8 +132,7 @@ module.exports = {
           4: "hsl(var(--chart-4))",
           5: "hsl(var(--chart-5))",
         },
-      },
-      fontFamily: {
+      }, fontFamily: {
         bebas: ["var(--font-bebas)"],
         jetbr: ["var(--font-jetbrainsmono)"],
         dancing: ["var(--font-dancingscript)"],
@@ -143,13 +144,12 @@ module.exports = {
       },
     },
   },
-  plugins: [require("tailwindcss-animate"), addVariablesForColors],
+  plugins: [
+    require("tailwindcss-animate"),
+    addVariablesForColors
+  ],
 };
-module.exports.colors = {
-  background: "hsl(var(--background))",
-  foreground: "hsl(var(--foreground))",
-  mutedForeground: "var(--muted-foreground)",
-};
+
 function addVariablesForColors({ addBase, theme }) {
   let allColors = flattenColorPalette(theme("colors"));
   let newVars = Object.fromEntries(

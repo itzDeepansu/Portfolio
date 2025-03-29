@@ -36,7 +36,7 @@ const Navbar = ({ classes }) => {
   }, []);
   return (
     <div
-      className={`h-20 ${classes} font-jetbr flex justify-between pt-3 text-xs bg-background z-40`}
+      className={`h-20 ${classes} font-jetbr flex justify-between pt-3 text-xs bg-background/20 backdrop-blur-md z-40`}
     >
       <div className="font-bebas text-xl">Deepansu</div>
       <div>

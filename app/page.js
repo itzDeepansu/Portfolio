@@ -8,9 +8,7 @@ import { useTheme } from "next-themes";
 import ProjectSection from "./components/ProjectSection";
 import Experiences from "./components/Experiences";
 import { Vortex } from "@/components/ui/vortex";
-import NewScrollImage from "./components/NewScrollImage";
 import ScrollImage from "./components/ScrollImage";
-import ThirdScrollImage from "./components/ThirdScrollImage";
 import { DNA } from "react-loader-spinner";
 export default function Home() {
   const { setTheme } = useTheme();
@@ -128,7 +126,7 @@ export default function Home() {
           scrollTopper >= 2970 ? "animate-fadeOut opacity-0.1" : ""
         }`}
       />
-      <NewScrollImage />
+      <ScrollImage className="hidden lg:block" />
       <Footer className="animate-fadeUp" />
     </div>
   );

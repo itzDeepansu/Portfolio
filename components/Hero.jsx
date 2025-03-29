@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { ArrowRight } from 'lucide-react';
-
+import Link from 'next/link';
 const ChatMessage = ({ sender, message, align }) => (
   <div className={`flex ${align === 'right' ? 'justify-end' : 'justify-start'} mb-4`}>
     <div className={`px-4 py-2 rounded-2xl max-w-[80%] ${
@@ -36,13 +36,14 @@ const Hero = () => {
               XZIST is a WebSockets-based messaging platform that lets you send text, files, images, and videos seamlessly.
             </p>
             <div className="pt-4">
-              <a 
-                href="#cta" 
+              <Link 
+              target="_blank"
+                href="https://github.com/itzDeepansu/Xist" 
                 className="inline-flex items-center justify-center space-x-2 rounded-md bg-primary px-6 py-3 text-base font-medium text-primary-foreground shadow-lg transition-all hover:bg-primary/90 hover:scale-105 hover:shadow-primary/20"
               >
-                <span>Try XZIST Now</span>
+                <span>Github Repo</span>
                 <ArrowRight className="h-4 w-4" />
-              </a>
+              </Link>
             </div>
           </div>
           

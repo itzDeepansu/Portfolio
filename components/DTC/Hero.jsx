@@ -40,7 +40,7 @@ const Hero = () => {
             <div className="bg-gradient-to-br from-transit-blue/10 via-transit-purple/10 to-transit-teal/10 aspect-[16/9] w-full overflow-hidden rounded-xl">
               <div className="flex justify-center h-full">
                 <div className="relative h-64 w-full max-w-2xl animate-pulse-soft">
-                  <div className="absolute inset-0 bg-[url('/projects/DTC/DTC_Landing_Page_DARK.PNG')] bg-cover bg-center opacity-50"></div>
+                  <img src="/projects/DTC/DTC_Landing_Page_DARK.PNG" className="absolute inset-0opacity-50" />
                 </div>
               </div>
             </div>

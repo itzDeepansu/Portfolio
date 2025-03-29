@@ -50,13 +50,13 @@ const Navbar = ({ classes }) => {
           </a>
         </div>
       </div>
-      <ul className="list-none">
+      <ul className="list-none hidden sm:flex sm:flex-col">
         <li>Figma Designs</li>
         <li>React Next.js Three.js</li>
         <li className="text-mutedForeground">Gsap C++</li>
         <li className="text-mutedForeground">Python</li>
       </ul>
-      <ul className="list-none">
+      <ul className="list-none hidden sm:flex sm:flex-col">
         <li
           className={`${
             scrollTopper <= 260 ? "text-foreground" : "text-mutedForeground"

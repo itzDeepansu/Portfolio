@@ -69,7 +69,7 @@ export default function Home() {
               delay={60}
             />
           </div>
-          <div className="h-[80dvh] flex flex-col justify-center gap-6 text-sm pl-16">
+          <div className="h-[80dvh] flex flex-col justify-center gap-6 text-sm pl-16 pb-16">
             <ul className="list-none">
               <li className="text-mutedForeground">
                 Hi! I&apos;m Deepansu Siwach , an India based

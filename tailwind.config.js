@@ -79,6 +79,11 @@ module.exports = {
             transform: "translate3d(0, 0, 0)",
           },
         },
+        'gradient-shift': {
+					'0%': { backgroundPosition: '0% 50%' },
+					'50%': { backgroundPosition: '100% 50%' },
+					'100%': { backgroundPosition: '0% 50%' },
+				},
       },
       animation: {
         fadeIn: "fadeIn 1.3s ease-in-out",
@@ -88,6 +93,11 @@ module.exports = {
         fadeDown: "fade-in-down 1.7s ease-in-out",
         fadeLeft: "fade-in-left 1s ease-in-out",
         fadeRight: "fade-in-right 1s ease-in-out",
+        'accordion-down': 'accordion-down 0.2s ease-out',
+				'accordion-up': 'accordion-up 0.2s ease-out',
+				'float': 'float 5s ease-in-out infinite',
+				'glow': 'glow 3s ease-in-out infinite',
+				'gradient-shift': 'gradient-shift 6s ease infinite',
       },
       colors: {
         primarysecond: "hsl(var(--primary2))",
@@ -122,6 +132,12 @@ module.exports = {
           DEFAULT: "hsl(var(--destructive))",
           foreground: "hsl(var(--destructive-foreground))",
         },
+        shopni: {
+					dark: "#0a0a0c",
+					purple: "#4f46e5",
+					blue: "#3b82f6",
+					teal: "#06b6d4"
+				},
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
         ring: "hsl(var(--ring))",

@@ -25,35 +25,35 @@ const ProjectSection = ({ className }) => {
           view each project in detail.
         </div>
       </div>
-      <div className="flex flex-col gap-10">
-        <Link className="flex justify-center items-center relative group"
+      <div className="flex flex-col gap-10 pr-1">
+        <Link className="flex justify-center items-center relative group hover:outline hover:outline-1"
           href="/projects/xist"
           >
           <div className="absolute text-4xl group-hover:z-40">XZIST</div>
           <img
             src="/projects/XIST/XIST_Login_Page_Dark.PNG"
             alt=""
-            className=" group-hover:blur-sm group-hover:opacity-60 cursor-pointer z-20  transition-transform duration-1000 linear hover:outline hover:outline-mutedForeground hover:outline-1"
+            className=" group-hover:blur-md group-hover:opacity-60 cursor-pointer z-20  transition-transform duration-1000 linear hover:outline hover:outline-mutedForeground hover:outline-1"
           />
         </Link>
         <Link
-          className="flex justify-center items-center relative group"
+          className="flex justify-center items-center relative group hover:outline hover:outline-1"
           href="/projects/dtc"
         >
           <div className="absolute text-4xl group-hover:z-40">DTC Admin</div>
           <img
             src="/projects/DTC/DTC_Landing_Page_Light.PNG"
             alt=""
-            className="group-hover:blur-sm group-hover:opacity-60 cursor-pointer z-20  transition-transform duration-1000 linear hover:outline hover:outline-mutedForeground hover:outline-1"
+            className="group-hover:blur-md group-hover:opacity-60 cursor-pointer z-20  transition-transform duration-1000 linear hover:outline hover:outline-mutedForeground hover:outline-1"
           />
         </Link>
-        <Link className="flex justify-center items-center relative group"
+        <Link className="flex justify-center items-center relative group hover:outline hover:outline-1"
           href="/projects/shopni">
           <div className="absolute text-4xl group-hover:z-40">ShopNi</div>
           <img
             src="/projects/ECommerce/EComm_Landing_Page.PNG"
             alt=""
-            className="group-hover:blur-sm group-hover:opacity-60 cursor-pointer z-20  transition-transform duration-1000 linear hover:outline hover:outline-mutedForeground hover:outline-1"
+            className="group-hover:blur-md group-hover:opacity-60 cursor-pointer z-20  transition-transform duration-1000 linear hover:outline hover:outline-mutedForeground hover:outline-1"
           />
         </Link>
       </div>

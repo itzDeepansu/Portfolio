@@ -115,6 +115,34 @@ body {
   .gradient-text2 {
     @apply bg-clip-text text-transparent bg-gradient-to-r from-orange-300 via-green-300 to-orange-400;
   }
+  .text-gradient {
+    @apply bg-gradient-to-r from-shopni-purple via-shopni-blue to-shopni-teal bg-clip-text text-transparent;
+  }
+  
+  .button-glow {
+    @apply relative overflow-hidden bg-gradient-to-r from-shopni-purple to-shopni-blue text-white px-6 py-3 rounded-md transition-all duration-300;
+    box-shadow: 0 0 10px rgba(79, 70, 229, 0.5);
+  }
+  
+  .button-glow:hover {
+    @apply from-shopni-blue to-shopni-purple;
+    box-shadow: 0 0 20px rgba(79, 70, 229, 0.7);
+  }
+  .button-outline {
+    @apply relative overflow-hidden bg-transparent text-white px-6 py-3 rounded-md transition-all duration-300 border border-white/20;
+  }
+  
+  .button-outline:hover {
+    @apply border-shopni-purple bg-shopni-purple/10;
+    box-shadow: 0 0 15px rgba(79, 70, 229, 0.3);
+  }
+  .glass-card {
+    @apply backdrop-blur-xl bg-white/5 border border-white/10 rounded-2xl transition-all duration-300;
+  }
+  
+  .glass-card:hover {
+    @apply bg-white/10 border-white/20 shadow-[0_8px_20px_-2px_rgba(79,70,229,0.3)];
+  }
 }
 .logo {
   height: 6em;

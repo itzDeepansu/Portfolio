@@ -60,8 +60,8 @@ const Navbar = ({ classes }) => {
         <li
           className={`${
             scrollTopper <= 260 ? "text-foreground" : "text-mutedForeground"
-          } cursor-pointer`}
-          onClick={() => scrollToSection(0, 2000)}
+          } cursor-pointer hover:text-foreground`}
+          onClick={() => scrollToSection(0, 100)}
         >
           Home
         </li>
@@ -70,8 +70,8 @@ const Navbar = ({ classes }) => {
             scrollTopper >= 260 && scrollTopper <= 1370
               ? "text-foreground"
               : "text-mutedForeground"
-          } cursor-pointer`}
-          onClick={() => scrollToSection(670, 2000)}
+          } cursor-pointer hover:text-foreground`}
+          onClick={() => scrollToSection(670, 100)}
         >
           Skills
         </li>
@@ -80,16 +80,16 @@ const Navbar = ({ classes }) => {
             scrollTopper >= 1370 && scrollTopper <= 2170
               ? "text-foreground"
               : "text-mutedForeground"
-          } cursor-pointer`}
-          onClick={() => scrollToSection(1600, 2000)}
+          } cursor-pointer hover:text-foreground`}
+          onClick={() => scrollToSection(1600, 100)}
         >
           Projects
         </li>
         <li
           className={`${
             scrollTopper >= 2170 ? "text-foreground" : "text-mutedForeground"
-          } cursor-pointer`}
-          onClick={() => scrollToSection(2630, 2500)}
+          } cursor-pointer hover:text-foreground`}
+          onClick={() => scrollToSection(2590, 100)}
         >
           Achievements
         </li>

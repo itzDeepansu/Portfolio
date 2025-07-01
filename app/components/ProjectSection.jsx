@@ -4,9 +4,9 @@ import Link from "next/link";
 const ProjectSection = ({ className }) => {
   return (
     <section
-      className={`h-[100dvh] grid grid-cols-2 gap-[440px] mt-16 ${className}`}
+      className={`h-[100dvh] flex flex-col sm:flex-row sm:justify-between mt-56 ${className}`}
     >
-      <div className="font-jetbr text-4xl pl-20 h-full justify-start items-start flex flex-col gap-4">
+      <div className="sm:w-1/3 font-jetbr text-4xl px-4 sm:pl-9 h-full justify-start items-start flex flex-col gap-4">
         Projects
         <div className="text-xs text-mutedForeground">
           I designed and developed these showcase projects with Figma, Spline,
@@ -20,7 +20,7 @@ const ProjectSection = ({ className }) => {
           view each project in detail.
         </div>
       </div>
-      <div className="flex flex-col gap-10 pr-1">
+      <div className="sm:w-1/3 flex flex-col gap-10 sm:pr-1">
         <Link className="flex justify-center items-center relative group hover:outline hover:outline-1"
           href="/projects/xist"
           >

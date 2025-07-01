@@ -47,7 +47,7 @@ export default function Home() {
     );
   }
   return (
-    <div className="image-container sm:h-[3350px] relative mx-2 sm:mx-10 box-border font-jetbr overflow-clip">
+    <div className="sm:h-[3550px] h-[5020px] relative mx-2 sm:mx-10 box-border font-jetbr overflow-clip">
       <Navbar classes="sticky top-0 animate-fadeDown" />
       <FadeInOnce>
         <section>
@@ -119,7 +119,7 @@ export default function Home() {
       <FadeInOnce>
         <Experiences />
       </FadeInOnce>
-      <ScrollImage className="hidden lg:block" />
+      <ScrollImage className="sm:block " />
       <Footer className="animate-fadeUp" />
     </div>
   );

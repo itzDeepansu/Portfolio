@@ -103,7 +103,7 @@ const ScrollAnimationCanvas = ({ className }) => {
       )}
       <canvas
         ref={canvasRef}
-        className="fixed bottom-0 -z-10"
+        className="fixed bottom-0 -z-10 opacity-30 md:opacity-100"
         style={{
           left: "50%",
           transform: "translate(-50%, 0%)",

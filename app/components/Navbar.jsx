@@ -38,7 +38,7 @@ const Navbar = ({ classes }) => {
     <div
       className={`h-20 ${classes} font-jetbr flex justify-between pt-3 text-xs bg-background/20 backdrop-blur-md z-40`}
     >
-      <div className="font-bebas text-xl">Deepansu</div>
+      <div className="font-bebas text-xl">Deepansu Siwach</div>
       <div>
       <div className="text-mutedForeground">Available at :</div>
         <div className="underline">

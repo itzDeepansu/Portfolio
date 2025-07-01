@@ -36,7 +36,7 @@ export function WebSkillsOne() {
 
   return (
     <div
-      className="relative flex w-full items-center justify-center overflow-hidden rounded-lg bg-background p-10 gap-40 pl-16"
+      className="relative flex w-full items-center justify-center overflow-hidden rounded-lg bg-transparent p-10 gap-40 pl-16"
       ref={containerRef}
     >
       <div
@@ -131,7 +131,7 @@ export function WebSkillsTwo() {
 
   return (
     <div
-      className="relative flex w-full items-center justify-center overflow-hidden rounded-lg bg-background p-10 gap-40 pr-10"
+      className="relative flex w-full items-center justify-center overflow-hidden rounded-lg bg-transparent p-10 gap-40 pr-10"
       ref={containerRef}
     >
       <div className="flex size-full flex-col items-center justify-between gap-2 mr-12">
@@ -231,7 +231,7 @@ export function AISkills() {
 
   return (
     <div
-      className="relative flex w-full items-center justify-center overflow-hidden rounded-lg bg-background p-10 gap-40 pr-10"
+      className="relative flex w-full items-center justify-center overflow-hidden rounded-lg bg-transparent p-10 gap-40 pr-10"
       ref={containerRef}
     >
       <div

@@ -1,7 +1,7 @@
 import React from "react";
 import { Button } from "@/components/ui/button";
 import { ArrowRight } from "lucide-react";
-
+import Link from "next/link";
 const Hero = () => {
   return (
     <section className="py-20 md:py-28" id="dtchero">
@@ -27,13 +27,14 @@ const Hero = () => {
               <Button
                 size="lg"
                 variant="outline"
+                disabled
               >
                 Link
                 <ArrowRight className="ml-2 h-4 w-4" />
               </Button>
-              <Button variant="outline" size="lg">
+              <Link href="https://github.com/itzDeepansu/DtcProject" target="_blank" variant="outline" size="lg">
                 Github Repo
-              </Button>
+              </Link>
             </div>
           </div>
           <div className="relative w-full max-w-4xl overflow-hidden rounded-xl shadow-xl animate-fadeUp">

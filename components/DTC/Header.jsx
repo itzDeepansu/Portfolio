@@ -64,7 +64,7 @@ const Header = () => {
               Technology
             </a>
           </nav>
-          <Button className="bg-orange-600 text-white hover:bg-orange-200 hover:text-black">Try DTC</Button>
+          <Button disabled className="bg-orange-600 text-white hover:bg-orange-200 hover:text-black">Try DTC</Button>
 
           {/* Mobile Menu Button */}
           <button

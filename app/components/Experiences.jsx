@@ -1,5 +1,6 @@
 import React from "react";
 // import { BackgroundBeams } from "@/components/ui/background-beams";
+import Link from "next/link";
 
 const Experiences = ({ className }) => {
   return (
@@ -30,16 +31,32 @@ const Experiences = ({ className }) => {
         <div className="text-xs text-mutedForeground">
           I have experienced various environments like working for a
           <span className="text-foreground"> professional organization </span>(
-          during my internship ) but I have also experienced tensed environments
+          during my internships ) but I have also experienced tensed environments
           of
           <span className="text-foreground"> Hackathons</span>.
         </div>
-        <div className="flex flex-col gap-4 justify-start items-start text-xl mt-10 lg:mt-40">
+        <div className="flex flex-col gap-4 justify-start items-start text-xl mt-10 lg:mt-36">
           <div className="gap-2 flex flex-col">
             <div>Internships:</div>
             <div className="text-xs text-mutedForeground pl-20">
-              <div className="text-foreground">Global Trendz</div> Frontend
-              Engineer - 2024 (June - July)
+              <Link
+                href="https://globaltrendz.com/"
+                className="text-foreground hover:underline cursor-pointer block"
+                target="_blank"
+              >
+                Global Trendz
+              </Link>{" "}
+              Frontend Engineer - 2024 (June - July)
+            </div>
+            <div className="text-xs text-mutedForeground pl-20">
+              <Link
+                href="https://celebaltech.com/"
+                className="text-foreground hover:underline cursor-pointer block"
+                target="_blank"
+              >
+                Celebal Technologies
+              </Link>{" "}
+              React JS Developer - 2025 (June - Now)
             </div>
           </div>
           <div className="gap-2 flex flex-col">
@@ -72,8 +89,14 @@ const Experiences = ({ className }) => {
               Competetive Programming :
             </div>
             <div>
-              <span className="text-foreground pl-20">LeetCode</span> - 200+
-              Questions
+              <Link
+                target="_blank"
+                href="https://leetcode.com/u/itzdeep/"
+                className="text-foreground pl-20 hover:underline"
+              >
+                LeetCode
+              </Link>{" "}
+              - 210+ Questions
             </div>
           </div>
         </div>

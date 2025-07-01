@@ -19,7 +19,8 @@ const CTA = () => {
             </p>
             <div className="animate-pulse">
               <Link 
-                href="/test?lastpage=xist" 
+              target="_blank"
+                href="https://xist-three.vercel.app/login" 
                 className="inline-flex items-center justify-center space-x-2 rounded-md bg-primary px-8 py-4 text-lg font-medium text-primary-foreground shadow-lg transition-all hover:bg-primary/90 hover:scale-105 hover:shadow-primary/20"
               >
                 <span>Try XZIST Now</span>

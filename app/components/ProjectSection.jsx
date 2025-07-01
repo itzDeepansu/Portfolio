@@ -2,11 +2,6 @@ import React from "react";
 // import { BackgroundBeams } from "@/components/ui/background-beams";
 import Link from "next/link";
 const ProjectSection = ({ className }) => {
-  const handleProjectClick = (e) => {
-    e.preventDefault();
-    console.log(e.currentTarget.getAttribute("name"));
-    window.open(e.currentTarget.getAttribute("name"));
-  };
   return (
     <section
       className={`h-[100dvh] grid grid-cols-2 gap-[440px] mt-16 ${className}`}

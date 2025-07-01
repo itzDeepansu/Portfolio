@@ -47,7 +47,7 @@ export default function Home() {
     );
   }
   return (
-    <div className="image-container h-[3350px] relative mx-10 box-border font-jetbr overflow-clip">
+    <div className="image-container sm:h-[3350px] relative mx-2 sm:mx-10 box-border font-jetbr overflow-clip">
       <Navbar classes="sticky top-0 animate-fadeDown" />
       <FadeInOnce>
         <section>
@@ -55,10 +55,10 @@ export default function Home() {
             backgroundColor={"black"}
             baseHue={100}
             particleCount={500}
-            className="h-[80dvh] grid grid-cols-2 gap-96"
+            className="h-[80dvh] grid grid-rows-2 sm:grid-rows-1 sm:grid-cols-2 sm:gap-96"
           >
-            <div className="h-[80dvh] text-7xl overflow-hidden pt-36 pl-10">
-              <div className="font-dancing text-9xl text-foreground">
+            <div className="h-[80dvh] text-6xl sm:text-7xl overflow-hidden pt-36 pl-4 sm:pl-10">
+              <div className="font-dancing text-8xl sm:text-9xl text-foreground">
                 Creative
               </div>
               <TypingText
@@ -68,7 +68,7 @@ export default function Home() {
                 delay={60}
               />
             </div>
-            <div className="h-[80dvh] flex flex-col justify-center gap-6 text-sm pl-16 pb-16">
+            <div className="sm:h-[80dvh] flex flex-col justify-center gap-6 text-sm pl-4 sm:pl-16 pb-16">
               <ul className="list-none">
                 <li className="text-mutedForeground">
                   Hi! I&apos;m Deepansu Siwach , an India based

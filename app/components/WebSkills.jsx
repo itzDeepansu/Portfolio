@@ -25,7 +25,7 @@ import {
   WWWIcon,
 } from "../../components/icons/icon";
 
-export function WebSkillsOne() {
+export function WebSkillsOne({ className }) {
   const containerRef = useRef(null);
   const div1Ref = useRef(null);
   const div2Ref = useRef(null);
@@ -36,29 +36,26 @@ export function WebSkillsOne() {
 
   return (
     <div
-      className="relative flex w-full items-center justify-center overflow-hidden rounded-lg bg-transparent p-10 gap-40 pl-16"
+      className={`${className} relative flex w-full items-center sm:justify-end overflow-hidden rounded-lg bg-transparent px-10`}
       ref={containerRef}
     >
-      <div
-        ref={div1Ref}
-        className="flex items-center justify-center w-20 h-20 rounded-full  z-10 -translate-x-16 bg-background"
-      >
+      <div ref={div1Ref} className="rounded-full z-10">
         <WWWIcon />
       </div>
-      <div className="flex size-full flex-col items-center justify-between gap-2">
+      <div className="flex w-full sm:w-full flex-col items-end justify-between gap-2">
         <div
           ref={div2Ref}
           className="flex items-center justify-center h-16  z-10 gap-2 bg-background"
         >
           <ReactIcon />
-          <div >React</div>
+          <div>React</div>
         </div>
         <div
           ref={div3Ref}
           className="flex items-center justify-center h-20  z-10 gap-2 bg-background"
         >
-          <ExpressIcon  />
-          <div >Express</div>
+          <ExpressIcon />
+          <div>Express</div>
         </div>
         <div
           ref={div4Ref}
@@ -71,15 +68,15 @@ export function WebSkillsOne() {
           ref={div5Ref}
           className="flex items-center justify-center h-20  z-10 gap-2 bg-background"
         >
-          <PostgresqlIcon  />
-          <div >Postgresql</div>
+          <PostgresqlIcon />
+          <div>Postgresql</div>
         </div>
         <div
           ref={div6Ref}
           className="flex items-center justify-center h-20  z-10 gap-2 bg-background"
         >
           <SupabaseIcon />
-          <div >Supabase</div>
+          <div>Supabase</div>
         </div>
       </div>
       <AnimatedBeam
@@ -131,50 +128,47 @@ export function WebSkillsTwo() {
 
   return (
     <div
-      className="relative flex w-full items-center justify-center overflow-hidden rounded-lg bg-transparent p-10 gap-40 pr-10"
+      className="relative flex w-full items-center overflow-hidden rounded-lg bg-transparent px-10"
       ref={containerRef}
     >
-      <div className="flex size-full flex-col items-center justify-between gap-2 mr-12">
+      <div className="flex w-full sm:w-full flex-col items-start justify-between gap-2">
         <div
           ref={div2Ref}
           className="flex items-center justify-center h-16  z-10 gap-1 bg-background"
         >
-          <div >Next.js</div>
-          <NextjsIcon  />
+          <div>Next.js</div>
+          <NextjsIcon />
         </div>
         <div
           ref={div3Ref}
           className="flex items-center justify-center h-20  z-10 gap-1 bg-background"
         >
-          <div >Socket.IO</div>
-          <SocketioIcon  />
+          <div>Socket.IO</div>
+          <SocketioIcon />
         </div>
         <div
           ref={div4Ref}
           className="flex items-center justify-center h-20  z-10 gap-1 bg-background"
         >
-          <div >Redis</div>
-          <RedisIcon  />
+          <div>Redis</div>
+          <RedisIcon />
         </div>
         <div
           ref={div5Ref}
           className="flex items-center justify-center h-20  z-10 gap-1 bg-background"
         >
-          <div >Docker</div>
-          <DockerIcon  />
+          <div>Docker</div>
+          <DockerIcon />
         </div>
         <div
           ref={div6Ref}
           className="flex items-center justify-center h-20  z-10 gap-1 bg-background"
         >
-          <div >Kubernetes</div>
-          <KubernetesIcon  />
+          <div>Kubernetes</div>
+          <KubernetesIcon />
         </div>
       </div>
-      <div
-        ref={div1Ref}
-        className="flex items-center justify-center w-20 h-20 rounded-full  z-10 translate-x-5 bg-background"
-      >
+      <div ref={div1Ref} className="rounded-full z-10">
         <WWWIcon />
       </div>
 
@@ -231,43 +225,43 @@ export function AISkills() {
 
   return (
     <div
-      className="relative flex w-full items-center justify-center overflow-hidden rounded-lg bg-transparent p-10 gap-40 pr-10"
+      className="relative flex w-full items-center sm:justify-end overflow-hidden rounded-lg bg-transparent p-10"
       ref={containerRef}
     >
       <div
         ref={div1Ref}
-        className="flex items-center justify-center w-20 h-20 rounded-full  z-10 translate-x-5 bg-background"
+        className="rounded-full z-10"
       >
-        <AIIcon className="bg-background" />
+        <AIIcon className="bg-transparent" />
       </div>
-      <div className="flex size-full flex-col items-center justify-between gap-2 mr-12">
+      <div className="flex w-full sm:w-full flex-col items-end justify-between gap-2">
         <div
           ref={div2Ref}
           className="flex items-center justify-center h-12  z-10 gap-1 bg-background"
         >
-          <div >Python</div>
-          <PythonIcon  />
+          <div>Python</div>
+          <PythonIcon />
         </div>
         <div
           ref={div3Ref}
           className="flex items-center justify-center h-20  z-10 gap-1 bg-background"
         >
-          <div >Pandas</div>
-          <PandasIcon  />
+          <div>Pandas</div>
+          <PandasIcon />
         </div>
         <div
           ref={div4Ref}
           className="flex items-center justify-center h-20  z-10 gap-1 bg-background"
         >
-          <div >TensorFlow</div>
-          <TensorflowIcon  />
+          <div>TensorFlow</div>
+          <TensorflowIcon />
         </div>
         <div
           ref={div5Ref}
           className="flex items-center justify-center  h-20  z-10 gap-1 bg-background"
         >
-          <div >Keras</div>
-          <KerasIcon  />
+          <div>Keras</div>
+          <KerasIcon />
         </div>
       </div>
 

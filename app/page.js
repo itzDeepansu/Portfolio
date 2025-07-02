@@ -57,7 +57,7 @@ export default function Home() {
             particleCount={500}
             className="h-[80dvh] grid grid-rows-2 sm:grid-rows-1 sm:grid-cols-2 sm:gap-96"
           >
-            <div className="h-[80dvh] text-6xl sm:text-7xl overflow-hidden pt-36 pl-4 sm:pl-10">
+            <div className="sm:h-[80dvh] text-6xl sm:text-7xl overflow-hidden pt-36 pl-4 sm:pl-10">
               <div className="font-dancing text-8xl sm:text-9xl text-foreground">
                 Creative
               </div>
@@ -69,31 +69,31 @@ export default function Home() {
               />
             </div>
             <div className="sm:h-[80dvh] flex flex-col justify-center gap-6 text-sm pl-4 sm:pl-16 pb-16">
-              <ul className="list-none">
-                <li className="text-mutedForeground">
-                  Hi! I&apos;m Deepansu Siwach , an India based
-                </li>
-                <li>
+              <div className="list-none">
+                <span className="text-mutedForeground">
+                  Hi! I&apos;m Deepansu Siwach , an India based{" "}
+                </span>
+                <span>
                   creative web developer
                   <span className="text-mutedForeground"> and </span>
                   web designer
-                </li>
-              </ul>
-              <ul className="list-none text-mutedForeground">
-                <li>I started learning web development about an year ago</li>
-                <li>
+                </span>
+              </div>
+              <div className="list-none text-mutedForeground">
+                <span>I started learning web development about an year ago</span>
+                <span>
                   but I also have interest in
                   <span className="text-foreground">
                     {" "}
                     Artificial Intelligence{" "}
                   </span>
-                </li>
-                <li>
+                </span>
+                <span>
                   and
                   <span className="text-foreground"> Machine Learning </span>. I
-                  want to use my skills of
-                </li>
-                <li>
+                  want to use my skills of{" "}
+                </span>
+                <span>
                   Web and AI to solve{" "}
                   <TypingText
                     text=" real world problems"
@@ -104,8 +104,8 @@ export default function Home() {
                     grow
                   />
                   .
-                </li>
-              </ul>
+                </span>
+              </div>
             </div>
           </Vortex>
         </section>

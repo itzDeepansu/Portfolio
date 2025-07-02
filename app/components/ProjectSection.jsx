@@ -4,7 +4,7 @@ import Link from "next/link";
 const ProjectSection = ({ className }) => {
   return (
     <section
-      className={`h-[100dvh] flex flex-col sm:flex-row sm:justify-between mt-56 ${className}`}
+      className={`h-[100dvh] flex flex-col sm:flex-row sm:justify-between gap-16 mt-56 ${className}`}
     >
       <div className="sm:w-1/3 font-jetbr text-4xl px-4 sm:pl-9 h-full justify-start items-start flex flex-col gap-4">
         Projects

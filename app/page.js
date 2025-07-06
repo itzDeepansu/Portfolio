@@ -11,6 +11,7 @@ import { Vortex } from "@/components/ui/vortex";
 import ScrollImage from "./components/ScrollImage";
 import { DNA } from "react-loader-spinner";
 import FadeInOnce from "./components/FadeInOnce";
+import SplashCursor from "@/components/animata/SplashCursor";
 export default function Home() {
   const { setTheme } = useTheme();
   const [scrollTopper, setScrollTopper] = useState(0);
@@ -49,6 +50,7 @@ export default function Home() {
   return (
     <div className="sm:h-[3550px] h-[5020px] relative mx-2 sm:mx-10 box-border font-jetbr overflow-clip">
       <Navbar classes="sticky top-0 animate-fadeDown" />
+      <SplashCursor />
       <FadeInOnce>
         <section>
           <Vortex

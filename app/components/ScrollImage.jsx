@@ -96,11 +96,11 @@ const ScrollAnimationCanvas = ({ className }) => {
 
   return (
     <div style={{ position: "relative", width: "100%", height: "100vh" }} className={className}>
-      {isLoading && (
+      {/* {isLoading && (
         <div className="fixed inset-0 flex items-center justify-center bg-black z-10">
-          <span className="text-xl animate-pulse">Loading...</span>
+          <span className="text-xl animate-pulse"></span>
         </div>
-      )}
+      )} */}
       <canvas
         ref={canvasRef}
         className="fixed bottom-0 -z-10 opacity-30 md:opacity-100"

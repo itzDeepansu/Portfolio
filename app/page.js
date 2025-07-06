@@ -12,6 +12,7 @@ import ScrollImage from "./components/ScrollImage";
 import { DNA } from "react-loader-spinner";
 import FadeInOnce from "./components/FadeInOnce";
 import SplashCursor from "@/components/animata/SplashCursor";
+import Orb from "@/components/animata/Orb";
 export default function Home() {
   const { setTheme } = useTheme();
   const [scrollTopper, setScrollTopper] = useState(0);
@@ -36,21 +37,20 @@ export default function Home() {
       <div className="flex items-center justify-center h-screen w-screen bg-background animate-fadeIn">
         {/* <div className="animate-spin rounded-full h-16 w-16 border-t-4 border-white"></div>
          */}
-        <DNA
-          visible={true}
-          height="300"
-          width="300"
-          ariaLabel="dna-loading"
-          wrapperStyle={{}}
-          wrapperClass="blur-sm scale-200 scale-[20]"
+        <Orb
+          hoverIntensity={0.5}
+          rotateOnHover={true}
+          hue={0}
+          forceHoverState={false}
         />
+        <SplashCursor />
       </div>
     );
   }
   return (
     <div className="sm:h-[3550px] h-[5020px] relative mx-2 sm:mx-10 box-border font-jetbr overflow-clip">
       <Navbar classes="sticky top-0 animate-fadeDown" />
-      <SplashCursor />
+
       <FadeInOnce>
         <section>
           <Vortex
@@ -82,7 +82,9 @@ export default function Home() {
                 </span>
               </div>
               <div className="list-none text-mutedForeground">
-                <span>I started learning web development about an year ago</span>
+                <span>
+                  I started learning web development about an year ago
+                </span>
                 <span>
                   but I also have interest in
                   <span className="text-foreground">
